@@ -48,6 +48,7 @@ Relevant academic background:
 
 **Program:** Chips Master Program (CMP), Next-Generation Semiconductor Engineering  
 **Project Topic:** APD-based device/process study for ToF-LiDAR sensor applications  
+**Period:** 2026.04 – 2027.01  
 **Status:** In progress  
 **Repository:** [None]
 
@@ -70,6 +71,7 @@ This project investigates APD-based device/process strategies for ToF-LiDAR rece
 ### 2. TCAD Low-Power MOSFET Optimization
 
 **Topic:** Dual-Metal Gate Structure for Low-Power MOSFETs  
+**Period:** 2026.05 – 2026.06  
 **Status:** In progress  
 **Tools:** Sentaurus TCAD, SProcess, SDevice, SVisual  
 **Repository:** [None]
@@ -95,6 +97,7 @@ This project analyzes how dual-metal gate work function engineering affects low-
 ### 3. [Vivado Verilog Traffic Signal Controller](https://jujushmaterial.github.io/vivado-traffic-signal-controller/)
 
 **Topic:** FSM-based traffic signal controller using Verilog and Vivado  
+**Period:** 2026.05  
 **Status:** Completed  
 **Tools:** Vivado, Verilog  
 **Project Page:** [View Project Page](https://jujushmaterial.github.io/vivado-traffic-signal-controller/)  
@@ -122,6 +125,7 @@ This project implements an FSM-based traffic signal controller using Verilog and
 ### 4. Semiconductor Fabrication Equipment Practice Log
 
 **Topic:** Semiconductor process equipment practice and daily learning records  
+**Period:** 2026.06.29 – 2026.07.03  
 **Status:** Planned  
 **Repository:** [None]
 
@@ -144,6 +148,7 @@ This section documents learning records from semiconductor fabrication equipment
 ### 5. Coursework and Materials Science Records
 
 **Topic:** Selected coursework and academic reports in materials science and engineering  
+**Period:** 2026.03 – 2026.06  
 **Status:** Planned / Ongoing  
 **Repository:** [None]
 

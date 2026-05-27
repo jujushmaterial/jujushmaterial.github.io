@@ -91,7 +91,7 @@ This project analyzes how dual-metal gate work function engineering affects low-
 
 ---
 
-### 3. Vivado Verilog Traffic Signal Controller
+### 3. [Vivado Verilog Traffic Signal Controller](https://jujushmaterial.github.io/vivado-traffic-signal-controller/)
 
 **Topic:** FSM-based traffic signal controller using Verilog and Vivado  
 **Status:** Completed  

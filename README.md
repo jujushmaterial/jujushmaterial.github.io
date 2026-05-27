@@ -96,7 +96,7 @@ This project analyzes how dual-metal gate work function engineering affects low-
 **Topic:** FSM-based traffic signal controller using Verilog and Vivado  
 **Status:** Completed  
 **Tools:** Vivado, Verilog  
-**Repository:** [None]
+**Repository:** [View Repository](https://github.com/jujushmaterial/vivado-traffic-signal-controller)
 
 Verilog와 Vivado를 이용하여 FSM 기반 traffic signal controller를 구현한 디지털 논리 설계 프로젝트입니다. Verilog 문법과 Vivado 설계 흐름에 익숙해지고, module, input/output, reg/wire, always block, case statement, counter, FSM, testbench, waveform verification 등 기초적인 HDL 구현 및 검증 과정을 다룹니다.
 

@@ -6,7 +6,7 @@
 
 주요 관심 분야는 반도체 소자/공정, TCAD 기반 소자 시뮬레이션, 반도체 제조 공정 및 장비, 재료 분석, 그리고 신소재공학 전공 지식을 활용한 공학적 문제 해결입니다.
 
-단순히 코드나 보고서를 모아두는 공간이 아니라, 전공 지식을 바탕으로 문제를 정의하고, 실험/시뮬레이션 결과를 해석하며, 기술적 인사이트를 정리하는 것을 목표로 합니다.
+전공 지식을 바탕으로 문제를 정의하고, 실험/시뮬레이션 결과를 해석하며, 기술적 인사이트를 정리하는 것을 목표로 합니다.
 
 This portfolio documents my academic projects, lab reports, TCAD simulations, Vivado-based digital logic projects, and learning records in materials science and semiconductor engineering. It focuses on connecting engineering problems, theoretical background, simulation or experimental results, and technical interpretation.
 

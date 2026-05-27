@@ -25,6 +25,6 @@ This portfolio documents academic projects, lab reports, TCAD simulations, Vivad
 
 ## Linked Projects
 
-| Project | Link |
-|---|---|
-| Vivado Verilog Traffic Signal Controller | [Project Page](https://jujushmaterial.github.io/vivado-traffic-signal-controller/) / [Repository](https://github.com/jujushmaterial/vivado-traffic-signal-controller) |
+| Project | Period | Link |
+|---|---|---|
+| Vivado Verilog Traffic Signal Controller | 2026.05 | [Project Page](https://jujushmaterial.github.io/vivado-traffic-signal-controller/) / [Repository](https://github.com/jujushmaterial/vivado-traffic-signal-controller) |

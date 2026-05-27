@@ -134,8 +134,6 @@ Possible topics include:
 
 ## Portfolio Direction
 
-This portfolio is not only a collection of codes or reports.
-
 The main goal is to document how I understand engineering problems, connect theory with simulation or experimental results, analyze data, and develop technical insight as a materials science and semiconductor engineering student.
 
 Each project will be organized to show the following flow:

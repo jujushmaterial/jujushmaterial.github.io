@@ -1,4 +1,19 @@
-# Sanghyeon Ju | Materials Science & Semiconductor Engineering Portfolio
+# Sanghyeon Ju | Materials & Semiconductor Engineering Portfolio
+
+## Portfolio Summary
+
+| No. | Portfolio | Period | Status | Link |
+|---:|---|---|---|---|
+| 1 | Chips Master Program (CMP) - APD Device/Process Project | 2026.04 – 2027.01 | In progress | [View](#cmp-apd-device-project) |
+| 2 | TCAD Low-Power MOSFET Optimization | 2026.05 – 2026.06 | In progress | [View](#tcad-low-power-mosfet-optimization) |
+| 3 | Vivado Verilog Traffic Signal Controller | 2026.05 | Completed | [Project Page](https://jujushmaterial.github.io/vivado-traffic-signal-controller/) |
+| 4 | Semiconductor Fabrication Equipment Practice Log | 2026.06.29 – 2026.07.03 | Planned | [View](#semiconductor-fabrication-equipment-practice-log) |
+| 5 | Coursework and Materials Science Records | 2026.03 – 2026.06 | Planned / Ongoing | [View](#coursework-and-materials-science-records) |
+
+**Summary:**  
+This table provides a quick overview of the main portfolio projects, including project period, current status, and direct links to each project section or project page.
+
+---
 
 ## About Me
 

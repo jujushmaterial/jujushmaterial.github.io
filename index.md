@@ -9,7 +9,7 @@
 | 3 | Vivado Verilog Traffic Signal Controller | 2026.05 | Completed | [Project Page](https://jujushmaterial.github.io/vivado-traffic-signal-controller/) |
 | 4 | Semiconductor Fabrication Equipment Practice Log | 2026.06.29 – 2026.07.03 | Planned | [None] |
 | 5 | Coursework and Materials Science Records | 2026.03 – 2026.06 | Planned / Ongoing | [None] |
-| 6 | Logic-to-Layout AI Tutor | 2026.06 – 2026.07 | Completed / Improving | [Project Page](https://github.com/jujushmaterial/logic-to-layout-tutor-portfolio) |
+| 6 | Logic-to-Layout AI Tutor | 2026.06 – 2026.07 | Completed / Improving | [Project Page](https://github.com/jujushmaterial/logic-to-layout-tutor-portfolio) / [Web App](https://logic-to-layout-tutor.vercel.app/) / [Demo](https://www.youtube.com/watch?v=6UpYdEnMlKQ) |
 
 **Summary:**  
 This table provides a quick overview of the main portfolio projects, including project period, current status, and direct links to each project section or project page.
@@ -192,7 +192,10 @@ Possible topics include:
 **Period:** 2026.06 – 2026.07  
 **Status:** Completed / Improving  
 **Tools:** HTML, CSS, JavaScript, Vercel, Supabase, OpenAI API, GitHub  
-**Project Page:** [View Project Page](https://github.com/jujushmaterial/logic-to-layout-tutor-portfolio)
+**Project Page:** [View Project Page](https://github.com/jujushmaterial/logic-to-layout-tutor-portfolio)  
+**Web App:** [Open Web App](https://logic-to-layout-tutor.vercel.app/)  
+**Demo Video:** [Watch Demo](https://www.youtube.com/watch?v=6UpYdEnMlKQ)  
+**Shared AX Repository:** [minho031207/AX](https://github.com/minho031207/AX)
 
 Logic-to-Layout AI Tutor는 디지털 논리식이 Truth Table, Gate Circuit, CMOS Schematic, Layout으로 변환되는 과정을 하나의 흐름으로 학습할 수 있는 AI 기반 인터랙티브 웹앱입니다. 사용자는 진리표를 직접 구성하고, 게이트 회로를 연결하고, CMOS 입력 조합별 pMOS/nMOS 동작을 확인하며, Layout 레이어와 전기적 추출 검사까지 실습할 수 있습니다.
 

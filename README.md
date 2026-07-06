@@ -18,6 +18,7 @@ This portfolio documents academic projects, lab reports, TCAD simulations, Vivad
 - Semiconductor device/process projects
 - TCAD-based device simulation
 - Vivado / Verilog digital logic projects
+- AI-based interactive semiconductor learning tools
 - Semiconductor fabrication equipment practice
 - Materials science coursework and lab reports
 
@@ -28,3 +29,4 @@ This portfolio documents academic projects, lab reports, TCAD simulations, Vivad
 | Project | Period | Link |
 |---|---|---|
 | Vivado Verilog Traffic Signal Controller | 2026.05 | [Project Page](https://jujushmaterial.github.io/vivado-traffic-signal-controller/) / [Repository](https://github.com/jujushmaterial/vivado-traffic-signal-controller) |
+| Logic-to-Layout AI Tutor | 2026.06 – 2026.07 | [Project Page](https://github.com/jujushmaterial/logic-to-layout-tutor-portfolio) / [Web App](https://logic-to-layout-tutor.vercel.app/) / [Demo](https://www.youtube.com/watch?v=6UpYdEnMlKQ) / [Shared AX Repository](https://github.com/minho031207/AX) |

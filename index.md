@@ -9,6 +9,7 @@
 | 3 | Vivado Verilog Traffic Signal Controller | 2026.05 | Completed | [Project Page](https://jujushmaterial.github.io/vivado-traffic-signal-controller/) |
 | 4 | Semiconductor Fabrication Equipment Practice Log | 2026.06.29 – 2026.07.03 | Planned | [None] |
 | 5 | Coursework and Materials Science Records | 2026.03 – 2026.06 | Planned / Ongoing | [None] |
+| 6 | Logic-to-Layout AI Tutor | 2026.06 – 2026.07 | Completed / Improving | [Project Page](https://github.com/jujushmaterial/logic-to-layout-tutor-portfolio) |
 
 **Summary:**  
 This table provides a quick overview of the main portfolio projects, including project period, current status, and direct links to each project section or project page.
@@ -182,6 +183,32 @@ Possible topics include:
 - Thin-film and surface analysis
 - Materials characterization reports
 - Semiconductor process and chemical analysis reports
+
+---
+
+### 6. [Logic-to-Layout AI Tutor](https://github.com/jujushmaterial/logic-to-layout-tutor-portfolio)
+
+**Topic:** AI-powered interactive logic-to-layout learning web app  
+**Period:** 2026.06 – 2026.07  
+**Status:** Completed / Improving  
+**Tools:** HTML, CSS, JavaScript, Vercel, Supabase, OpenAI API, GitHub  
+**Project Page:** [View Project Page](https://github.com/jujushmaterial/logic-to-layout-tutor-portfolio)
+
+Logic-to-Layout AI Tutor는 디지털 논리식이 Truth Table, Gate Circuit, CMOS Schematic, Layout으로 변환되는 과정을 하나의 흐름으로 학습할 수 있는 AI 기반 인터랙티브 웹앱입니다. 사용자는 진리표를 직접 구성하고, 게이트 회로를 연결하고, CMOS 입력 조합별 pMOS/nMOS 동작을 확인하며, Layout 레이어와 전기적 추출 검사까지 실습할 수 있습니다.
+
+**Summary:**  
+This project connects truth tables, gate circuits, CMOS schematics, and layout-level practice into one continuous interactive learning workflow. It combines hands-on logic construction, CMOS behavior visualization, layout-layer practice, AI tutoring, ranking, and personalized learning reports.
+
+주요 구현 내용은 다음과 같습니다.
+
+- Truth Table 기반 입력-출력 관계 학습
+- Gate Circuit 직접 구성 및 진리표 기반 검증
+- pMOS/nMOS 기반 CMOS Schematic 시각화
+- N-Well, Active, Poly, Metal1, Contact 기반 Layout Lab
+- Layout 전기적 추출 검사 및 오류 피드백
+- OpenAI API 기반 AI Tutor
+- Supabase 기반 로그인, 자동 저장, 점수, 랭킹, 학습 리포트
+- ChatGPT를 활용한 바이브 코딩 기반 반복 개발
 
 ---
 

@@ -5,7 +5,7 @@
 | No. | Portfolio | Period | Status | Link |
 |---:|---|---|---|---|
 | 1 | Vivado Verilog Traffic Signal Controller | 2026.05 | Completed | [Project Page](https://jujushmaterial.github.io/vivado-traffic-signal-controller/) |
-| 2 | Logic-to-Layout AI Tutor | 2026.06 – 2026.07 | Completed / Improving | [Project Page](https://github.com/jujushmaterial/logic-to-layout-tutor-portfolio) / [Web App](https://logic-to-layout-tutor.vercel.app/) / [Demo](https://www.youtube.com/watch?v=6UpYdEnMlKQ) |
+| 2 | Logic-to-Layout AI Tutor | 2026.06 – 2026.07 | Completed | [Project Page](https://github.com/jujushmaterial/logic-to-layout-tutor-portfolio) / [Web App](https://logic-to-layout-tutor.vercel.app/) / [Demo](https://www.youtube.com/watch?v=6UpYdEnMlKQ) |
 
 ---
 

@@ -5,8 +5,11 @@
 | No. | Portfolio | Period | Status | Link |
 |---:|---|---|---|---|
 | 1 | Sentaurus pMOS Process Optimization | 2026.03–2026.06 | Completed | [Project Page](https://jujushmaterial.github.io/sentaurus-pmos-process-optimization/) / [Repository](https://github.com/jujushmaterial/sentaurus-pmos-process-optimization) |
-| 2 | Vivado Verilog Traffic Signal Controller | 2026.05 | Completed | [Project Page](https://jujushmaterial.github.io/vivado-traffic-signal-controller/) |
+| 2 | Vivado Verilog Traffic Signal Controller | 2026.05 | Completed | [Project Page](https://jujushmaterial.github.io/vivado-traffic-signal-controller/) / [Repository](https://github.com/jujushmaterial/vivado-traffic-signal-controller) |
 | 3 | Logic-to-Layout AI Tutor | 2026.06–2026.07 | Completed | [Project Page](https://github.com/jujushmaterial/logic-to-layout-tutor-portfolio) / [Web App](https://logic-to-layout-tutor.vercel.app/) / [Demo](https://www.youtube.com/watch?v=6UpYdEnMlKQ) |
+
+**Summary:**  
+This table provides direct access to completed portfolio projects, their development periods, and detailed project pages.
 
 ---
 
@@ -44,23 +47,25 @@ Relevant academic background:
 **Status:** Completed  
 **Tools:** Sentaurus Workbench, SProcess, SDevice, SVisual  
 **Project Page:** [View Project Page](https://jujushmaterial.github.io/sentaurus-pmos-process-optimization/)  
-**Repository:** [View Repository](https://github.com/jujushmaterial/sentaurus-pmos-process-optimization)
+**Repository:** [View Repository](https://github.com/jujushmaterial/sentaurus-pmos-process-optimization)  
+**Report:** [View Public Report](https://github.com/jujushmaterial/sentaurus-pmos-process-optimization/blob/main/report/pmos_process_optimization_report.pdf)
 
-기존 SimpleMOS nMOS 예제를 pMOS 공정으로 변환하고, LDD, Source/Drain, RTA, Spacer 조건을 최적화한 TCAD 프로젝트입니다. pMOS에 맞게 well과 implant 극성, 바이어스 방향, 전류 처리 방식을 수정하고, 전기적 지표를 자동 추출했습니다.
+기존 SimpleMOS nMOS 예제를 pMOS 공정으로 변환하고, LDD, Source/Drain, RTA, Spacer 조건을 최적화한 TCAD 프로젝트입니다. SProcess, SDevice, SVisual command를 수정하고 `Ion`, `Ioff`, `SS`, `Vtgm`, `gm`을 자동 추출했습니다.
 
-개별 수치 비교와 `Ion/Ioff–SS` 그래프 기반 방법을 각각 적용했습니다. 최종적으로 목표 Ion을 유지하면서 Ioff와 SS를 낮춘 그래프 기반 조건을 선정했습니다.
+개별 수치 비교와 `Ion/Ioff–SS` 그래프 기반 최적화를 각각 수행했습니다. 그래프 기반 조건은 수치 비교 조건보다 Ion은 약 9.2% 낮았지만 Ioff를 약 68.1% 줄이고 SS도 개선해 최종 소자로 선정했습니다.
 
 **Summary:**  
-This project converts a SimpleMOS nMOS process into a pMOS flow and compares numerical and `Ion/Ioff–SS` plot-based optimization methods. The final device satisfies the Ion, Ioff, SS, and Vtgm targets.
+This project converts a SimpleMOS nMOS process into a pMOS flow and compares numerical and `Ion/Ioff–SS` optimization methods. The final device meets the Ion, Ioff, SS, and Vtgm targets.
 
 주요 내용은 다음과 같습니다.
 
 - nMOS-to-pMOS process polarity conversion
-- SProcess implant, RTA, and spacer parameterization
-- pMOS SDevice bias setup
+- NWell and BF2 implant implementation
+- RTA and spacer parameterization
+- pMOS negative-bias SDevice sweep
 - SVisual-based Ion, Ioff, SS, Vtgm, and gm extraction
-- LDD, Source/Drain, RTA, and Spacer DOE splits
-- Numerical and `Ion/Ioff–SS` optimization comparison
+- Thirteen TDR process checkpoints
+- Numerical and plot-based DOE optimization
 - Final device selection and target verification
 
 ---
@@ -74,22 +79,19 @@ This project converts a SimpleMOS nMOS process into a pMOS flow and compares num
 **Project Page:** [View Project Page](https://jujushmaterial.github.io/vivado-traffic-signal-controller/)  
 **Repository:** [View Repository](https://github.com/jujushmaterial/vivado-traffic-signal-controller)
 
-Verilog와 Vivado를 이용하여 FSM 기반 traffic signal controller를 구현한 디지털 논리 설계 프로젝트입니다. Verilog 문법과 Vivado 설계 흐름에 익숙해지고, module, input/output, reg/wire, always block, case statement, counter, FSM, testbench, waveform verification 등 기초적인 HDL 구현 및 검증 과정을 다룹니다.
+Verilog와 Vivado를 이용해 FSM 기반 Traffic Signal Controller를 개선한 디지털 논리 설계 프로젝트입니다. Emergency Mode, Country Road Green Time Limit, Night OFF Mode를 구현하고 testbench와 behavioral simulation으로 검증했습니다.
 
 **Summary:**  
-This project implements an FSM-based traffic signal controller using Verilog and Vivado, focusing on basic HDL design, testbench construction, and waveform-based verification.
+This project implements an improved FSM-based traffic signal controller using Verilog and Vivado, focusing on HDL design, testbench construction, and waveform-based verification.
 
 주요 학습 내용은 다음과 같습니다.
 
-- Verilog module structure
-- Input/output declaration
-- reg/wire usage
-- always block
-- case statement
-- Counter and register behavior
-- Moore FSM structure
-- Testbench writing
-- Waveform verification using Vivado
+- Verilog module and I/O structure
+- State register, next-state logic, and Moore output logic
+- Counter-based time limitation
+- Emergency priority and night-mode control
+- Testbench scenario construction
+- Vivado behavioral simulation and waveform analysis
 
 ---
 
@@ -101,30 +103,26 @@ This project implements an FSM-based traffic signal controller using Verilog and
 **Tools:** HTML, CSS, JavaScript, Vercel, Supabase, OpenAI API, GitHub  
 **Project Page:** [View Project Page](https://github.com/jujushmaterial/logic-to-layout-tutor-portfolio)  
 **Web App:** [Open Web App](https://logic-to-layout-tutor.vercel.app/)  
-**Demo Video:** [Watch Demo](https://www.youtube.com/watch?v=6UpYdEnMlKQ)  
-**Shared AX Repository:** [minho031207/AX](https://github.com/minho031207/AX)
+**Demo Video:** [Watch Demo](https://www.youtube.com/watch?v=6UpYdEnMlKQ)
 
-Logic-to-Layout AI Tutor는 디지털 논리식이 Truth Table, Gate Circuit, CMOS Schematic, Layout으로 변환되는 과정을 하나의 흐름으로 학습할 수 있는 AI 기반 인터랙티브 웹앱입니다. 사용자는 진리표를 직접 구성하고, 게이트 회로를 연결하고, CMOS 입력 조합별 pMOS/nMOS 동작을 확인하며, Layout 레이어와 전기적 추출 검사까지 실습할 수 있습니다.
+Truth Table, Gate Circuit, CMOS Schematic, Layout으로 이어지는 디지털 논리 학습 과정을 하나의 인터랙티브 웹앱으로 구현했습니다. AI Tutor, 자동 저장, 점수·랭킹, 학습 리포트 기능을 포함합니다.
 
 **Summary:**  
-This project connects truth tables, gate circuits, CMOS schematics, and layout-level practice into one continuous interactive learning workflow. It combines hands-on logic construction, CMOS behavior visualization, layout-layer practice, AI tutoring, ranking, and personalized learning reports.
+This project connects truth tables, gate circuits, CMOS schematics, and layout practice into one interactive learning workflow with AI tutoring and learning-data features.
 
 주요 구현 내용은 다음과 같습니다.
 
-- Truth Table 기반 입력-출력 관계 학습
-- Gate Circuit 직접 구성 및 진리표 기반 검증
-- pMOS/nMOS 기반 CMOS Schematic 시각화
-- N-Well, Active, Poly, Metal1, Contact 기반 Layout Lab
-- Layout 전기적 추출 검사 및 오류 피드백
-- OpenAI API 기반 AI Tutor
-- Supabase 기반 로그인, 자동 저장, 점수, 랭킹, 학습 리포트
-- ChatGPT를 활용한 바이브 코딩 기반 반복 개발
+- Truth Table and Gate Circuit practice
+- CMOS Schematic visualization
+- Layer-based Layout Lab
+- Electrical extraction and error feedback
+- OpenAI API-based AI Tutor
+- Supabase-based login, saving, scoring, and ranking
+- Vercel deployment and iterative AI-assisted development
 
 ---
 
 ## Portfolio Direction
-
-이 포트폴리오의 목표는 각 프로젝트와 보고서에서 어떤 문제를 정의했고, 어떤 이론적 배경을 바탕으로 접근했으며, 결과를 어떻게 해석했는지를 정리하는 것입니다.
 
 각 프로젝트는 다음 흐름으로 정리합니다.
 

@@ -4,8 +4,9 @@
 
 | No. | Portfolio | Period | Status | Link |
 |---:|---|---|---|---|
-| 1 | Vivado Verilog Traffic Signal Controller | 2026.05 | Completed | [Project Page](https://jujushmaterial.github.io/vivado-traffic-signal-controller/) |
-| 2 | Logic-to-Layout AI Tutor | 2026.06 – 2026.07 | Completed | [Project Page](https://github.com/jujushmaterial/logic-to-layout-tutor-portfolio) / [Web App](https://logic-to-layout-tutor.vercel.app/) / [Demo](https://www.youtube.com/watch?v=6UpYdEnMlKQ) |
+| 1 | Sentaurus pMOS Process Optimization | 2026.03–2026.06 | Completed | [Project Page](https://jujushmaterial.github.io/sentaurus-pmos-process-optimization/) / [Repository](https://github.com/jujushmaterial/sentaurus-pmos-process-optimization) |
+| 2 | Vivado Verilog Traffic Signal Controller | 2026.05 | Completed | [Project Page](https://jujushmaterial.github.io/vivado-traffic-signal-controller/) |
+| 3 | Logic-to-Layout AI Tutor | 2026.06–2026.07 | Completed | [Project Page](https://github.com/jujushmaterial/logic-to-layout-tutor-portfolio) / [Web App](https://logic-to-layout-tutor.vercel.app/) / [Demo](https://www.youtube.com/watch?v=6UpYdEnMlKQ) |
 
 ---
 
@@ -36,7 +37,35 @@ Relevant academic background:
 
 ## Portfolio Projects
 
-### 1. [Vivado Verilog Traffic Signal Controller](https://jujushmaterial.github.io/vivado-traffic-signal-controller/)
+### 1. [Sentaurus pMOS Process Optimization](https://jujushmaterial.github.io/sentaurus-pmos-process-optimization/)
+
+**Topic:** pMOS process conversion and multi-objective optimization using Sentaurus TCAD  
+**Period:** 2026.03–2026.06  
+**Status:** Completed  
+**Tools:** Sentaurus Workbench, SProcess, SDevice, SVisual  
+**Project Page:** [View Project Page](https://jujushmaterial.github.io/sentaurus-pmos-process-optimization/)  
+**Repository:** [View Repository](https://github.com/jujushmaterial/sentaurus-pmos-process-optimization)
+
+기존 SimpleMOS nMOS 예제를 pMOS 공정으로 변환하고, LDD, Source/Drain, RTA, Spacer 조건을 최적화한 TCAD 프로젝트입니다. pMOS에 맞게 well과 implant 극성, 바이어스 방향, 전류 처리 방식을 수정하고, 전기적 지표를 자동 추출했습니다.
+
+개별 수치 비교와 `Ion/Ioff–SS` 그래프 기반 방법을 각각 적용했습니다. 최종적으로 목표 Ion을 유지하면서 Ioff와 SS를 낮춘 그래프 기반 조건을 선정했습니다.
+
+**Summary:**  
+This project converts a SimpleMOS nMOS process into a pMOS flow and compares numerical and `Ion/Ioff–SS` plot-based optimization methods. The final device satisfies the Ion, Ioff, SS, and Vtgm targets.
+
+주요 내용은 다음과 같습니다.
+
+- nMOS-to-pMOS process polarity conversion
+- SProcess implant, RTA, and spacer parameterization
+- pMOS SDevice bias setup
+- SVisual-based Ion, Ioff, SS, Vtgm, and gm extraction
+- LDD, Source/Drain, RTA, and Spacer DOE splits
+- Numerical and `Ion/Ioff–SS` optimization comparison
+- Final device selection and target verification
+
+---
+
+### 2. [Vivado Verilog Traffic Signal Controller](https://jujushmaterial.github.io/vivado-traffic-signal-controller/)
 
 **Topic:** FSM-based traffic signal controller using Verilog and Vivado  
 **Period:** 2026.05  
@@ -64,11 +93,11 @@ This project implements an FSM-based traffic signal controller using Verilog and
 
 ---
 
-### 2. [Logic-to-Layout AI Tutor](https://github.com/jujushmaterial/logic-to-layout-tutor-portfolio)
+### 3. [Logic-to-Layout AI Tutor](https://github.com/jujushmaterial/logic-to-layout-tutor-portfolio)
 
 **Topic:** AI-powered interactive logic-to-layout learning web app  
-**Period:** 2026.06 – 2026.07  
-**Status:** Completed / Improving  
+**Period:** 2026.06–2026.07  
+**Status:** Completed  
 **Tools:** HTML, CSS, JavaScript, Vercel, Supabase, OpenAI API, GitHub  
 **Project Page:** [View Project Page](https://github.com/jujushmaterial/logic-to-layout-tutor-portfolio)  
 **Web App:** [Open Web App](https://logic-to-layout-tutor.vercel.app/)  

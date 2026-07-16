@@ -4,7 +4,7 @@
 
 | No. | Portfolio | Period | Status | Link |
 |---:|---|---|---|---|
-| 1 | Sentaurus pMOS Process Optimization | 2026.03–2026.06 | Completed | [Project Page](https://jujushmaterial.github.io/sentaurus-pmos-process-optimization/) / [Repository](https://github.com/jujushmaterial/sentaurus-pmos-process-optimization) |
+| 1 | TCAD pMOS Process Optimization | 2026.03–2026.06 | Completed | [Project Page](https://jujushmaterial.github.io/sentaurus-pmos-process-optimization/) / [Repository](https://github.com/jujushmaterial/sentaurus-pmos-process-optimization) |
 | 2 | Vivado Verilog Traffic Signal Controller | 2026.05 | Completed | [Project Page](https://jujushmaterial.github.io/vivado-traffic-signal-controller/) / [Repository](https://github.com/jujushmaterial/vivado-traffic-signal-controller) |
 | 3 | Logic-to-Layout AI Tutor | 2026.06–2026.07 | Completed | [Project Page](https://github.com/jujushmaterial/logic-to-layout-tutor-portfolio) / [Web App](https://logic-to-layout-tutor.vercel.app/) / [Demo](https://www.youtube.com/watch?v=6UpYdEnMlKQ) |
 
@@ -33,6 +33,7 @@ Relevant academic background:
 - Semiconductor Devices
 - Semiconductor Processes
 - Materials Engineering
+- TCAD Device/Process Simulation — Synopsys Sentaurus (Workbench, SProcess, SDevice, SVisual)
 - Python
 - Vibe Coding / AI-Assisted Development
 
@@ -40,7 +41,7 @@ Relevant academic background:
 
 ## Portfolio Projects
 
-### 1. [Sentaurus pMOS Process Optimization](https://jujushmaterial.github.io/sentaurus-pmos-process-optimization/)
+### 1. [TCAD pMOS Process Optimization](https://jujushmaterial.github.io/sentaurus-pmos-process-optimization/)
 
 **Topic:** pMOS process conversion and multi-objective optimization using Sentaurus TCAD  
 **Period:** 2026.03–2026.06  

@@ -4,7 +4,7 @@
 
 | No. | Portfolio | Period | Status | Link |
 |---:|---|---|---|---|
-| 1 | TCAD pMOS Process Optimization | 2026.03–2026.06 | Completed | [Project Page](https://jujushmaterial.github.io/sentaurus-pmos-process-optimization/) / [Repository](https://github.com/jujushmaterial/sentaurus-pmos-process-optimization) |
+| 1 | TCAD pMOS Process Optimization | 2026.03–2026.06 | Completed | [Project Page](https://jujushmaterial.github.io/TCAD-pMOS-process-optimization/) / [Repository](https://github.com/jujushmaterial/TCAD-pMOS-process-optimization) |
 | 2 | Vivado Verilog Traffic Signal Controller | 2026.05 | Completed | [Project Page](https://jujushmaterial.github.io/vivado-traffic-signal-controller/) / [Repository](https://github.com/jujushmaterial/vivado-traffic-signal-controller) |
 | 3 | Logic-to-Layout AI Tutor | 2026.06–2026.07 | Completed | [Project Page](https://github.com/jujushmaterial/logic-to-layout-tutor-portfolio) / [Web App](https://logic-to-layout-tutor.vercel.app/) / [Demo](https://www.youtube.com/watch?v=6UpYdEnMlKQ) |
 
@@ -41,15 +41,15 @@ Relevant academic background:
 
 ## Portfolio Projects
 
-### 1. [TCAD pMOS Process Optimization](https://jujushmaterial.github.io/sentaurus-pmos-process-optimization/)
+### 1. [TCAD pMOS Process Optimization](https://jujushmaterial.github.io/TCAD-pMOS-process-optimization/)
 
 **Topic:** pMOS process conversion and multi-objective optimization using Sentaurus TCAD  
 **Period:** 2026.03–2026.06  
 **Status:** Completed  
 **Tools:** Sentaurus Workbench, SProcess, SDevice, SVisual  
-**Project Page:** [View Project Page](https://jujushmaterial.github.io/sentaurus-pmos-process-optimization/)  
-**Repository:** [View Repository](https://github.com/jujushmaterial/sentaurus-pmos-process-optimization)  
-**Report:** [View Public Report](https://github.com/jujushmaterial/sentaurus-pmos-process-optimization/blob/main/report/pmos_process_optimization_report.pdf)
+**Project Page:** [View Project Page](https://jujushmaterial.github.io/TCAD-pMOS-process-optimization/)  
+**Repository:** [View Repository](https://github.com/jujushmaterial/TCAD-pMOS-process-optimization)  
+**Report:** [View Public Report](https://github.com/jujushmaterial/TCAD-pMOS-process-optimization/blob/main/report/pmos_process_optimization_report.pdf)
 
 기존 SimpleMOS nMOS 예제를 pMOS 공정으로 변환하고, LDD, Source/Drain, RTA, Spacer 조건을 최적화한 TCAD 프로젝트입니다. SProcess, SDevice, SVisual command를 수정하고 `Ion`, `Ioff`, `SS`, `Vtgm`, `gm`을 자동 추출했습니다.
 

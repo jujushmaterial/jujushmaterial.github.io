@@ -55,16 +55,32 @@
     });
   };
 
+  const logicProjectUrl = 'https://jujushmaterial.github.io/logic-to-layout-tutor-portfolio/';
+  const normalizeProjectLinks = () => {
+    document.querySelectorAll('.project-card-link').forEach((link) => {
+      const title = link.querySelector('h2')?.textContent?.trim() || '';
+      if (title.includes('Logic-to-Layout')) link.href = logicProjectUrl;
+    });
+
+    document.querySelectorAll('.related-pill').forEach((link) => {
+      if (link.textContent.trim() === 'Logic-to-Layout') link.href = logicProjectUrl;
+    });
+  };
+
   const projectContainer = document.querySelector('.projects-wrapper');
   const allButton = document.querySelector('[data-filter="all"]');
 
   if (projectContainer) {
-    const observer = new MutationObserver(normalizeStatusCards);
+    const observer = new MutationObserver(() => {
+      normalizeStatusCards();
+      normalizeProjectLinks();
+    });
     observer.observe(projectContainer, { childList: true, subtree: true });
   }
 
   requestAnimationFrame(() => {
     allButton?.click();
     normalizeStatusCards();
+    normalizeProjectLinks();
   });
 })();

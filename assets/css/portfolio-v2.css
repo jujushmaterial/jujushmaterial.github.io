@@ -51,9 +51,10 @@ img { display: block; max-width: 100%; }
 
 /* Home */
 .home-layout {
-  min-height: calc(100vh - 34px);
+  height: calc(100vh - 34px);
+  min-height: 690px;
   display: grid;
-  grid-template-rows: minmax(270px, 34vh) minmax(430px, 66vh);
+  grid-template-rows: 32% 68%;
 }
 .home-hero {
   display: flex;
@@ -129,12 +130,14 @@ img { display: block; max-width: 100%; }
 .skills-grid {
   max-width: 900px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 18px;
 }
 .skill-card {
   position: relative;
+  flex: 0 1 276px;
   min-height: 180px;
   padding: 0;
   overflow: hidden;
@@ -154,6 +157,7 @@ img { display: block; max-width: 100%; }
   align-items: center;
   justify-content: center;
   padding: 22px;
+  text-align: center;
   transition: opacity .18s ease, transform .18s ease;
 }
 .skill-card__front { font-size: 1.25rem; font-weight: 700; }
@@ -261,7 +265,7 @@ img { display: block; max-width: 100%; }
 .compact-footer { min-height: 34px; }
 
 @media (max-width: 760px) {
-  .home-layout { grid-template-rows: auto auto; min-height: auto; }
+  .home-layout { height: auto; min-height: auto; grid-template-rows: auto auto; }
   .home-hero { min-height: 380px; padding: 32px 20px; }
   .home-hero__content {
     grid-template-columns: 1fr;
@@ -275,7 +279,7 @@ img { display: block; max-width: 100%; }
   .theme-button { min-width: 132px; }
   .home-about { min-height: 500px; }
   .about-background { text-align: left; }
-  .skills-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .skill-card { flex-basis: calc(50% - 10px); }
   .projects-wrapper { grid-template-columns: 1fr; }
   .card { min-height: 480px; }
 }
@@ -284,8 +288,7 @@ img { display: block; max-width: 100%; }
   .home-menu, .subpage-menu { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .theme-button { min-width: 0; width: 100%; }
   .subpage-head h1 { font-size: 2.15rem; }
-  .skills-grid { grid-template-columns: 1fr; }
-  .skill-card { min-height: 160px; }
+  .skill-card { flex-basis: 100%; min-height: 160px; }
   .page-main { padding-left: 14px; padding-right: 14px; }
   .card__content { padding: 20px; }
   .card__article h2 { min-height: auto; }

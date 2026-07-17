@@ -51,8 +51,8 @@
   ];
 
   /*
-   * Experience 항목은 자료가 준비될 때 아래 배열에 추가합니다.
-   * skills에 연결할 기술명을 넣으면 Skills 페이지에 자동으로 표시됩니다.
+   * 경험을 추가할 때 title, shortTitle, period, description, link, skills를 입력합니다.
+   * project 또는 experience의 skills 값은 Skills 페이지에 자동으로 반영됩니다.
    */
   const experiences = [];
 
@@ -122,9 +122,9 @@
       const relatedItems = [...relatedProjects, ...relatedExperiences];
 
       return `
-        <div class="skill-row${relatedItems.length ? '' : ' skill-row--empty'}" tabindex="0">
+        <div class="skill-row${relatedItems.length ? '' : ' skill-row--empty'}">
           <div class="skill-row__title">${skill}</div>
-          ${relatedItems.length ? `<div class="skill-related" aria-label="${skill} 관련 프로젝트와 경험">${relatedItems.join('')}</div>` : ''}
+          ${relatedItems.length ? `<div class="skill-related" aria-label="${skill} 관련 포트폴리오 항목">${relatedItems.join('')}</div>` : ''}
         </div>`;
     }).join('');
   }

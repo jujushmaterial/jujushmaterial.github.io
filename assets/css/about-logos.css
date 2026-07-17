@@ -1,16 +1,17 @@
 .education-logos {
-  width: min(650px, 90vw);
-  margin: 28px auto 0;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: min(560px, 88vw);
+  margin: 24px auto 0;
+  display: flex;
   align-items: center;
-  gap: clamp(14px, 2.2vw, 24px);
+  justify-content: center;
+  gap: 40px;
 }
 
 .education-logo-link {
+  flex: 0 0 auto;
   min-width: 0;
-  min-height: 112px;
-  padding: 4px 6px;
+  min-height: 98px;
+  padding: 3px 4px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,55 +30,56 @@
 }
 
 .education-logo {
-  width: 100%;
-  max-height: 100px;
+  display: block;
+  height: auto;
+  max-height: 88px;
   object-fit: contain;
 }
 
 .education-logo--university {
-  max-width: 178px;
+  width: 150px;
 }
 
 .education-logo--materials {
-  max-width: 152px;
+  width: 128px;
 }
 
 .education-logo--semiconductor {
-  max-width: 108px;
+  width: 90px;
 }
 
 @media (max-width: 760px) {
   .education-logos {
-    width: min(560px, 90vw);
-    gap: 14px;
+    width: min(500px, 88vw);
+    gap: 28px;
   }
 
   .education-logo-link {
-    min-height: 96px;
-    padding: 4px;
+    min-height: 88px;
+    padding: 3px;
   }
 
   .education-logo {
-    max-height: 88px;
+    max-height: 78px;
   }
 
-  .education-logo--university { max-width: 150px; }
-  .education-logo--materials { max-width: 130px; }
-  .education-logo--semiconductor { max-width: 96px; }
+  .education-logo--university { width: 132px; }
+  .education-logo--materials { width: 114px; }
+  .education-logo--semiconductor { width: 84px; }
 }
 
 @media (max-width: 540px) {
   .education-logos {
-    margin-top: 24px;
-    grid-template-columns: 1fr;
-    gap: 10px;
+    margin-top: 22px;
+    flex-direction: column;
+    gap: 8px;
   }
 
   .education-logo-link {
-    min-height: 92px;
+    min-height: 82px;
   }
 
-  .education-logo--university { max-width: 170px; }
-  .education-logo--materials { max-width: 145px; }
-  .education-logo--semiconductor { max-width: 102px; }
+  .education-logo--university { width: 150px; }
+  .education-logo--materials { width: 128px; }
+  .education-logo--semiconductor { width: 90px; }
 }

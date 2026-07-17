@@ -484,11 +484,17 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .site-footer p { margin: 0; }
 
 .reveal {
+  opacity: 1;
+  transform: none;
+}
+
+.js-ready .reveal {
   opacity: 0;
   transform: translateY(16px);
   transition: opacity 520ms ease, transform 520ms ease;
 }
-.reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+.js-ready .reveal.is-visible { opacity: 1; transform: translateY(0); }
 
 :focus-visible { outline: 3px solid rgba(41, 128, 185, 0.5); outline-offset: 4px; }
 
@@ -561,5 +567,5 @@ button, a { -webkit-tap-highlight-color: transparent; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
-  .reveal { opacity: 1; transform: none; }
+  .js-ready .reveal { opacity: 1; transform: none; }
 }

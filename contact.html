@@ -20,6 +20,7 @@
       color: #404040;
       font-size: 1.08rem;
       line-height: 1.65;
+      text-align: center;
     }
     .contact-copy h2 {
       margin: 0 0 28px;
@@ -28,18 +29,23 @@
       text-align: center;
     }
     .contact-copy p {
-      margin: 0 0 24px;
+      margin: 0 0 18px;
     }
     .contact-copy a {
       color: inherit;
       text-underline-offset: 3px;
+    }
+    .contact-copy-en {
+      margin-top: 38px;
+      padding-top: 32px;
+      border-top: 1px solid #d9d9d9;
     }
     .contact-icons {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 22px;
-      margin-top: 64px;
+      margin-top: 58px;
     }
     .contact-icon {
       width: 34px;
@@ -71,8 +77,12 @@
       .contact-copy h2 {
         font-size: 2rem;
       }
+      .contact-copy-en {
+        margin-top: 30px;
+        padding-top: 26px;
+      }
       .contact-icons {
-        margin-top: 48px;
+        margin-top: 46px;
       }
     }
   </style>
@@ -95,16 +105,24 @@
     <div class="page-container">
       <section class="contact-copy" aria-labelledby="contact-title">
         <h2 id="contact-title">Contact</h2>
-        <p>
-          프로젝트, 연구 및 협업과 관련된 연락을 환영합니다.
-        </p>
-        <p>
-          이메일은 <a href="mailto:hiimang3@naver.com">hiimang3@naver.com</a>으로 보내주세요.
-        </p>
-        <p>
-          현재 공개한 프로젝트와 소스 코드는
-          <a href="https://github.com/jujushmaterial" target="_blank" rel="noopener">GitHub</a>에서 확인할 수 있습니다.
-        </p>
+
+        <div lang="ko">
+          <p>프로젝트, 연구 및 협업과 관련된 연락을 환영합니다.</p>
+          <p>이메일은 <a href="mailto:hiimang3@naver.com">hiimang3@naver.com</a>으로 보내주세요.</p>
+          <p>
+            현재 공개한 프로젝트와 소스 코드는
+            <a href="https://github.com/jujushmaterial" target="_blank" rel="noopener">GitHub</a>에서 확인할 수 있습니다.
+          </p>
+        </div>
+
+        <div class="contact-copy-en" lang="en">
+          <p>I welcome inquiries related to projects, research, and collaboration.</p>
+          <p>Please contact me at <a href="mailto:hiimang3@naver.com">hiimang3@naver.com</a>.</p>
+          <p>
+            My public projects and source code are available on
+            <a href="https://github.com/jujushmaterial" target="_blank" rel="noopener">GitHub</a>.
+          </p>
+        </div>
 
         <div class="contact-icons" aria-label="Contact links">
           <a class="contact-icon" href="mailto:hiimang3@naver.com" aria-label="Send email">

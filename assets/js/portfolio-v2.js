@@ -67,6 +67,22 @@
     'AI-Assisted Development'
   ];
 
+  const statusType = (status) => {
+    const normalized = status.toLowerCase();
+    if (normalized.includes('in progress') || normalized.includes('ongoing') || normalized.includes('진행')) {
+      return 'in-progress';
+    }
+    if (
+      normalized.includes('completed') ||
+      normalized.includes('complete') ||
+      normalized.includes('conference presented') ||
+      normalized.includes('완료')
+    ) {
+      return 'completed';
+    }
+    return 'neutral';
+  };
+
   const projectContainer = document.querySelector('.projects-wrapper');
   const filterButtons = document.querySelectorAll('[data-filter]');
 
@@ -85,7 +101,15 @@
             <table class="project-info" aria-label="${project.title} 기본 정보">
               <tbody>
                 <tr><th>Period</th><td>${project.period}</td></tr>
-                <tr><th>Status</th><td>${project.status}</td></tr>
+                <tr>
+                  <th>Status</th>
+                  <td>
+                    <span class="status-value">
+                      <span class="status-dot status-dot--${statusType(project.status)}" aria-hidden="true"></span>
+                      ${project.status}
+                    </span>
+                  </td>
+                </tr>
                 <tr><th>Tools</th><td>${project.tools}</td></tr>
               </tbody>
             </table>

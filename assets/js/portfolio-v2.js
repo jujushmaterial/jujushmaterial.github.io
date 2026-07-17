@@ -38,44 +38,51 @@
   const filterButtons = document.querySelectorAll('[data-filter]');
 
   const projectCard = (project) => `
-    <div class="wrapper">
+    <div class="project-wrapper">
       <a class="project-card-link" href="${project.link}" aria-label="${project.title} 프로젝트 페이지 열기">
-        <div class="card radius">
+        <article class="card">
           <div class="card__image">
             <img src="${project.image}" alt="${project.title} representative image" loading="lazy">
           </div>
-          <div class="card__content card__padding">
-            <article class="card__article">
+          <div class="card__content">
+            <div class="card__article">
               <h2>${project.title}</h2>
-              <p class="paragraph-text-normal">${project.description}</p>
-            </article>
+              <p>${project.description}</p>
+            </div>
             <div class="card__meta">
-              ${project.technologies.map((tech) => `<span class="project-technology paragraph-text-normal">${tech}</span>`).join('')}
+              ${project.technologies.map((tech) => `<span class="project-technology">${tech}</span>`).join('')}
             </div>
           </div>
-        </div>
+        </article>
       </a>
     </div>`;
 
   const renderProjects = (filter = 'featured') => {
-    filterButtons.forEach((button) => button.classList.toggle('white-button-hover', button.dataset.filter === filter));
+    if (!container) return;
+    filterButtons.forEach((button) => {
+      button.classList.toggle('is-active', button.dataset.filter === filter);
+    });
     const visible = filter === 'all' ? projects : projects.filter((project) => project.categories.includes(filter));
-    container.style.opacity = '0';
-    window.setTimeout(() => {
-      container.innerHTML = visible.map(projectCard).join('');
-      container.style.opacity = '1';
-    }, 120);
+    container.innerHTML = visible.map(projectCard).join('');
   };
 
-  filterButtons.forEach((button) => button.addEventListener('click', () => renderProjects(button.dataset.filter)));
-  document.querySelectorAll('a[href^="#"]').forEach((link) => {
-    link.addEventListener('click', (event) => {
-      const target = document.querySelector(link.getAttribute('href'));
-      if (!target) return;
-      event.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  filterButtons.forEach((button) => {
+    button.addEventListener('click', () => renderProjects(button.dataset.filter));
+  });
+  renderProjects('featured');
+
+  const skillCards = document.querySelectorAll('.skill-card');
+  skillCards.forEach((card) => {
+    card.addEventListener('click', () => {
+      const nextState = !card.classList.contains('is-open');
+      skillCards.forEach((item) => {
+        item.classList.remove('is-open');
+        item.setAttribute('aria-expanded', 'false');
+      });
+      if (nextState) {
+        card.classList.add('is-open');
+        card.setAttribute('aria-expanded', 'true');
+      }
     });
   });
-  container.style.transition = 'opacity .18s ease';
-  renderProjects('featured');
 })();

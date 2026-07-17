@@ -1,0 +1,83 @@
+.education-logos {
+  width: min(760px, 92vw);
+  margin: 34px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: center;
+  gap: clamp(24px, 4vw, 46px);
+}
+
+.education-logo-link {
+  min-width: 0;
+  min-height: 132px;
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: transform .18s ease, opacity .18s ease;
+}
+
+.education-logo-link:hover {
+  transform: translateY(-3px);
+}
+
+.education-logo-link:focus-visible {
+  outline: 3px solid #3498db;
+  outline-offset: 5px;
+}
+
+.education-logo {
+  width: 100%;
+  max-height: 118px;
+  object-fit: contain;
+}
+
+.education-logo--university {
+  max-width: 205px;
+}
+
+.education-logo--materials {
+  max-width: 175px;
+}
+
+.education-logo--semiconductor {
+  max-width: 126px;
+}
+
+@media (max-width: 760px) {
+  .education-logos {
+    width: min(620px, 92vw);
+    gap: 20px;
+  }
+
+  .education-logo-link {
+    min-height: 112px;
+    padding: 6px;
+  }
+
+  .education-logo {
+    max-height: 100px;
+  }
+
+  .education-logo--university { max-width: 170px; }
+  .education-logo--materials { max-width: 145px; }
+  .education-logo--semiconductor { max-width: 108px; }
+}
+
+@media (max-width: 540px) {
+  .education-logos {
+    margin-top: 28px;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .education-logo-link {
+    min-height: 104px;
+  }
+
+  .education-logo--university { max-width: 205px; }
+  .education-logo--materials { max-width: 175px; }
+  .education-logo--semiconductor { max-width: 122px; }
+}

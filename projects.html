@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Sanghyeon Ju Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="assets/css/portfolio-v2.css">
+</head>
+<body>
+  <header class="subpage-head">
+    <div class="subpage-head__inner animated">
+      <h1>Projects</h1>
+      <nav class="subpage-menu" aria-label="Portfolio pages">
+        <a class="theme-button" href="index.html">HOME</a>
+        <a class="theme-button" href="skills.html">SKILLS</a>
+        <a class="theme-button is-current" href="projects.html">PROJECTS</a>
+        <a class="theme-button" href="experience.html">EXPERIENCE</a>
+        <a class="theme-button" href="https://github.com/jujushmaterial" target="_blank" rel="noopener">CONTACT</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <div class="page-container">
+      <div class="project-technologies" aria-label="Project filters">
+        <button class="filter-button is-active" type="button" data-filter="featured">Featured</button>
+        <button class="filter-button" type="button" data-filter="all">All</button>
+        <button class="filter-button" type="button" data-filter="tcad">TCAD</button>
+        <button class="filter-button" type="button" data-filter="digital">Digital</button>
+        <button class="filter-button" type="button" data-filter="aiweb">AI / Web</button>
+      </div>
+      <div class="projects-wrapper" aria-live="polite"></div>
+    </div>
+  </main>
+
+  <footer class="footer">Sanghyeon Ju &copy; 2026 · Theme based on abhn/portfolio (GPL-3.0)</footer>
+  <script src="assets/js/portfolio-v2.js"></script>
+</body>
+</html>

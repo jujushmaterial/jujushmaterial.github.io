@@ -23,11 +23,21 @@
     return { label: 'Complete', dotClass: 'status-dot--completed' };
   };
 
+  const textLabel = (statusElement) => [...statusElement.childNodes]
+    .filter((node) => node.nodeType === Node.TEXT_NODE)
+    .map((node) => node.textContent)
+    .join('')
+    .trim();
+
   const normalizeStatusCards = () => {
     document.querySelectorAll('.status-value').forEach((statusElement) => {
       const dot = statusElement.querySelector('.status-dot');
-      const rawStatus = statusElement.textContent.trim();
-      const policy = statusPolicy(rawStatus);
+      const policy = statusPolicy(statusElement.textContent);
+      const alreadyNormalized =
+        textLabel(statusElement) === policy.label &&
+        dot?.classList.contains(policy.dotClass);
+
+      if (alreadyNormalized) return;
 
       if (dot) {
         dot.classList.remove(

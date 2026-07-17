@@ -1,16 +1,16 @@
 .education-logos {
-  width: min(760px, 92vw);
-  margin: 34px auto 0;
+  width: min(650px, 90vw);
+  margin: 28px auto 0;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: center;
-  gap: clamp(24px, 4vw, 46px);
+  gap: clamp(14px, 2.2vw, 24px);
 }
 
 .education-logo-link {
   min-width: 0;
-  min-height: 132px;
-  padding: 8px 10px;
+  min-height: 112px;
+  padding: 4px 6px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,54 +30,54 @@
 
 .education-logo {
   width: 100%;
-  max-height: 118px;
+  max-height: 100px;
   object-fit: contain;
 }
 
 .education-logo--university {
-  max-width: 205px;
+  max-width: 178px;
 }
 
 .education-logo--materials {
-  max-width: 175px;
+  max-width: 152px;
 }
 
 .education-logo--semiconductor {
-  max-width: 126px;
+  max-width: 108px;
 }
 
 @media (max-width: 760px) {
   .education-logos {
-    width: min(620px, 92vw);
-    gap: 20px;
-  }
-
-  .education-logo-link {
-    min-height: 112px;
-    padding: 6px;
-  }
-
-  .education-logo {
-    max-height: 100px;
-  }
-
-  .education-logo--university { max-width: 170px; }
-  .education-logo--materials { max-width: 145px; }
-  .education-logo--semiconductor { max-width: 108px; }
-}
-
-@media (max-width: 540px) {
-  .education-logos {
-    margin-top: 28px;
-    grid-template-columns: 1fr;
+    width: min(560px, 90vw);
     gap: 14px;
   }
 
   .education-logo-link {
-    min-height: 104px;
+    min-height: 96px;
+    padding: 4px;
   }
 
-  .education-logo--university { max-width: 205px; }
-  .education-logo--materials { max-width: 175px; }
-  .education-logo--semiconductor { max-width: 122px; }
+  .education-logo {
+    max-height: 88px;
+  }
+
+  .education-logo--university { max-width: 150px; }
+  .education-logo--materials { max-width: 130px; }
+  .education-logo--semiconductor { max-width: 96px; }
+}
+
+@media (max-width: 540px) {
+  .education-logos {
+    margin-top: 24px;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .education-logo-link {
+    min-height: 92px;
+  }
+
+  .education-logo--university { max-width: 170px; }
+  .education-logo--materials { max-width: 145px; }
+  .education-logo--semiconductor { max-width: 102px; }
 }

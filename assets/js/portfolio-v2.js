@@ -1,4 +1,6 @@
 (() => {
+  document.body.classList.add('js-ready');
+
   const nav = document.querySelector('.top-nav');
   const toggle = document.querySelector('.menu-toggle');
   const menu = document.querySelector('.site-menu');

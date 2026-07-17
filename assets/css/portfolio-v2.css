@@ -47,6 +47,11 @@ button { font: inherit; }
   grid-column-gap: 10px;
   margin: 0 auto;
 }
+.head-menu-wrap.animated { animation-name: fade-in-menu; }
+@keyframes fade-in-menu {
+  from { opacity: 0; transform: translate(-50%,-10px); }
+  to { opacity: 1; transform: translate(-50%,0); }
+}
 .profile-pic { border-radius: 50%; width: 170px; height: 170px; object-fit: cover; border: solid 2px white; }
 .profile-pic:hover { transition: all .3s ease; box-shadow: 0 0 16px rgba(255,255,255,.5); }
 .profile-pic-div { display: flex; justify-content: center; margin-bottom: 20px; }

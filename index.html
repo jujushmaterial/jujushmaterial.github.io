@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="주상현의 신소재·반도체공학 포트폴리오. 반도체 소자·공정, Sentaurus TCAD, 디지털 논리 및 AI 기반 프로젝트를 소개합니다.">
+  <meta name="theme-color" content="#252a30">
+  <title>Sanghyeon Ju | Materials & Semiconductor Engineering</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="assets/css/portfolio-v2.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 바로가기</a>
+
+  <header class="site-header" id="top">
+    <nav class="top-nav" aria-label="주요 메뉴">
+      <a class="brand" href="#top" aria-label="포트폴리오 첫 화면으로 이동">SJ</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+        <span class="sr-only">메뉴 열기</span>
+      </button>
+      <div class="site-menu" id="site-menu">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__content reveal is-visible">
+        <p class="hero__eyebrow">Materials Science & Semiconductor Engineering</p>
+        <h1 id="hero-title">Sanghyeon Ju</h1>
+        <p class="hero__summary">
+          반도체 소자·공정 문제를 TCAD 시뮬레이션과 실험적 분석으로 탐구하고,
+          필요한 디지털·소프트웨어 도구를 직접 구현합니다.
+        </p>
+        <div class="hero__keywords" aria-label="주요 관심 분야">
+          <span>Semiconductor Device</span>
+          <span>Process</span>
+          <span>TCAD</span>
+        </div>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#projects">프로젝트 보기</a>
+          <a class="button button--ghost" href="#about">소개 보기</a>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#about" aria-label="다음 섹션으로 이동">
+        <span>Scroll</span>
+        <span class="scroll-cue__line"></span>
+      </a>
+    </section>
+  </header>
+
+  <main id="main-content">
+    <section class="section section--light" id="about">
+      <div class="section__inner section__inner--narrow reveal">
+        <p class="section-kicker">About</p>
+        <h2>소자와 공정을 이해하고, 결과로 검증하는 엔지니어를 지향합니다.</h2>
+        <div class="about-grid">
+          <p>
+            숭실대학교 신소재공학과에서 재료의 구조와 물성을 공부하고,
+            차세대반도체공학 복수전공을 통해 반도체 소자·공정 역량을 확장하고 있습니다.
+          </p>
+          <p>
+            Sentaurus TCAD를 활용한 MOSFET 공정·소자 시뮬레이션을 중심으로,
+            문제 정의부터 구조 구현, 지표 추출, 결과 비교와 한계 분석까지 전 과정을 기록합니다.
+            회로와 소프트웨어는 반도체 문제를 더 잘 이해하고 해결하기 위한 도구로 활용합니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--muted" id="projects">
+      <div class="section__inner">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-kicker">Projects</p>
+            <h2>직접 설계하고 구현한 프로젝트</h2>
+          </div>
+          <p>카드 전체를 누르면 각 프로젝트의 상세 페이지로 이동합니다.</p>
+        </div>
+
+        <div class="project-grid">
+          <a class="project-card reveal" href="https://jujushmaterial.github.io/TCAD-Dual-Metal-Gate-MOSFET-Feasibility-Study/" aria-label="TCAD Dual-Metal-Gate MOSFET Feasibility Study 상세 페이지 열기">
+            <div class="project-card__visual project-card__visual--dmg" aria-hidden="true">
+              <svg viewBox="0 0 640 360" role="img">
+                <rect width="640" height="360" fill="#17202a"/>
+                <rect x="72" y="238" width="496" height="72" rx="5" fill="#1769aa"/>
+                <rect x="245" y="168" width="72" height="70" rx="4" fill="#35a7c7"/>
+                <rect x="323" y="168" width="72" height="70" rx="4" fill="#f1b95b"/>
+                <rect x="216" y="153" width="208" height="10" rx="5" fill="#dce6ee"/>
+                <path d="M72 238 C165 238 184 206 245 206" stroke="#f2685a" stroke-width="20" fill="none"/>
+                <path d="M395 206 C456 206 475 238 568 238" stroke="#f2685a" stroke-width="20" fill="none"/>
+                <text x="281" y="199" text-anchor="middle" fill="#10212e" font-size="19" font-weight="700">GateS</text>
+                <text x="359" y="199" text-anchor="middle" fill="#3b2a0f" font-size="19" font-weight="700">GateD</text>
+                <text x="281" y="224" text-anchor="middle" fill="#10212e" font-size="15">4.2 eV</text>
+                <text x="359" y="224" text-anchor="middle" fill="#3b2a0f" font-size="15">4.8 eV</text>
+                <text x="320" y="62" text-anchor="middle" fill="#f7fafc" font-size="27" font-weight="700">Dual-Metal Gate MOSFET</text>
+                <text x="320" y="94" text-anchor="middle" fill="#9fb2c3" font-size="17">Work-Function Split · High-K · Gate Ratio</text>
+              </svg>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="status status--presented">Conference Presented</span>
+                <span>2026.03–2026.07</span>
+              </div>
+              <h3>TCAD Dual-Metal-Gate MOSFET Feasibility Study</h3>
+              <p>Source–drain Work-Function Split, High-K gate stack과 gate-ratio trade-off를 검증한 Sentaurus TCAD 연구입니다.</p>
+              <ul class="tag-list" aria-label="사용 도구">
+                <li>Sentaurus</li><li>SProcess</li><li>SDevice</li><li>SVisual</li>
+              </ul>
+              <span class="project-card__link">프로젝트 상세 보기 <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
+          <a class="project-card reveal" href="https://jujushmaterial.github.io/TCAD-pMOS-process-optimization/" aria-label="TCAD pMOS Process Optimization 상세 페이지 열기">
+            <div class="project-card__visual project-card__visual--pmos" aria-hidden="true">
+              <svg viewBox="0 0 640 360" role="img">
+                <defs>
+                  <linearGradient id="pmos-bg" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#eef5fa"/>
+                    <stop offset="1" stop-color="#d8e8f4"/>
+                  </linearGradient>
+                </defs>
+                <rect width="640" height="360" fill="url(#pmos-bg)"/>
+                <rect x="62" y="252" width="516" height="68" rx="5" fill="#3179ad"/>
+                <rect x="162" y="220" width="316" height="32" fill="#88b7d8"/>
+                <rect x="256" y="140" width="128" height="80" rx="4" fill="#35495c"/>
+                <rect x="244" y="127" width="152" height="13" rx="5" fill="#f7fbff"/>
+                <rect x="116" y="212" width="98" height="40" rx="20" fill="#e2727a"/>
+                <rect x="426" y="212" width="98" height="40" rx="20" fill="#e2727a"/>
+                <path d="M135 112 H505" stroke="#2980b9" stroke-width="3" stroke-dasharray="9 10"/>
+                <circle cx="188" cy="112" r="9" fill="#2980b9"/>
+                <circle cx="320" cy="112" r="9" fill="#2980b9"/>
+                <circle cx="452" cy="112" r="9" fill="#2980b9"/>
+                <text x="188" y="91" text-anchor="middle" fill="#32485a" font-size="15">Implant</text>
+                <text x="320" y="91" text-anchor="middle" fill="#32485a" font-size="15">RTA</text>
+                <text x="452" y="91" text-anchor="middle" fill="#32485a" font-size="15">Evaluate</text>
+                <text x="320" y="50" text-anchor="middle" fill="#213140" font-size="27" font-weight="700">pMOS Process Optimization</text>
+              </svg>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="status">Completed</span>
+                <span>2026.03–2026.06</span>
+              </div>
+              <h3>TCAD pMOS Process Optimization</h3>
+              <p>SimpleMOS nMOS 공정을 pMOS로 전환하고, 공정변수 DOE를 통해 Ion·Ioff·SS의 균형 조건을 선정했습니다.</p>
+              <ul class="tag-list" aria-label="사용 도구">
+                <li>Sentaurus</li><li>DOE</li><li>Process</li><li>pMOS</li>
+              </ul>
+              <span class="project-card__link">프로젝트 상세 보기 <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
+          <a class="project-card reveal" href="https://jujushmaterial.github.io/vivado-traffic-signal-controller/" aria-label="Vivado Verilog Traffic Signal Controller 상세 페이지 열기">
+            <div class="project-card__visual project-card__visual--vivado" aria-hidden="true">
+              <svg viewBox="0 0 640 360" role="img">
+                <rect width="640" height="360" fill="#171c22"/>
+                <g stroke="#364451" stroke-width="1">
+                  <path d="M48 88H602M48 136H602M48 184H602M48 232H602M48 280H602"/>
+                  <path d="M96 64V302M160 64V302M224 64V302M288 64V302M352 64V302M416 64V302M480 64V302M544 64V302"/>
+                </g>
+                <path d="M48 111H127V87H225V111H318V87H414V111H508V87H602" fill="none" stroke="#53d6b6" stroke-width="5"/>
+                <path d="M48 159H190V135H286V159H410V135H506V159H602" fill="none" stroke="#f0c45a" stroke-width="5"/>
+                <path d="M48 207H128V183H319V207H416V183H544V207H602" fill="none" stroke="#ea6b77" stroke-width="5"/>
+                <path d="M48 255H222V231H351V255H479V231H602" fill="none" stroke="#6fb1ff" stroke-width="5"/>
+                <text x="48" y="48" fill="#f7fafc" font-size="27" font-weight="700">FSM Traffic Signal Controller</text>
+                <text x="602" y="48" text-anchor="end" fill="#98a9b8" font-size="16">Behavioral Simulation</text>
+              </svg>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="status">Completed</span>
+                <span>2026.05</span>
+              </div>
+              <h3>Vivado Verilog Traffic Signal Controller</h3>
+              <p>Emergency, Country Road Green Time Limit, Night OFF 기능을 추가한 FSM을 설계하고 testbench로 검증했습니다.</p>
+              <ul class="tag-list" aria-label="사용 도구">
+                <li>Vivado</li><li>Verilog</li><li>FSM</li><li>Testbench</li>
+              </ul>
+              <span class="project-card__link">프로젝트 상세 보기 <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
+          <a class="project-card reveal" href="https://github.com/jujushmaterial/logic-to-layout-tutor-portfolio" aria-label="Logic-to-Layout AI Tutor 프로젝트 페이지 열기">
+            <div class="project-card__visual project-card__visual--layout" aria-hidden="true">
+              <svg viewBox="0 0 640 360" role="img">
+                <rect width="640" height="360" fill="#f7f9fb"/>
+                <rect x="42" y="55" width="155" height="245" rx="10" fill="#fff" stroke="#cbd6df" stroke-width="2"/>
+                <rect x="242" y="55" width="155" height="245" rx="10" fill="#fff" stroke="#cbd6df" stroke-width="2"/>
+                <rect x="442" y="55" width="155" height="245" rx="10" fill="#fff" stroke="#cbd6df" stroke-width="2"/>
+                <text x="119" y="88" text-anchor="middle" fill="#263847" font-size="18" font-weight="700">Truth Table</text>
+                <g fill="#eaf2f8" stroke="#8aa9bf">
+                  <rect x="70" y="112" width="98" height="34"/><rect x="70" y="146" width="98" height="34"/>
+                  <rect x="70" y="180" width="98" height="34"/><rect x="70" y="214" width="98" height="34"/>
+                </g>
+                <text x="319" y="88" text-anchor="middle" fill="#263847" font-size="18" font-weight="700">CMOS</text>
+                <path d="M282 124H356M282 172H356M282 220H356" stroke="#2980b9" stroke-width="5"/>
+                <circle cx="300" cy="124" r="12" fill="#f1b95b"/><circle cx="338" cy="172" r="12" fill="#35a7c7"/><circle cx="300" cy="220" r="12" fill="#f1b95b"/>
+                <text x="519" y="88" text-anchor="middle" fill="#263847" font-size="18" font-weight="700">Layout</text>
+                <g stroke="#d9e2e9">
+                  <path d="M468 112H572M468 138H572M468 164H572M468 190H572M468 216H572M468 242H572M468 268H572"/>
+                  <path d="M468 112V268M494 112V268M520 112V268M546 112V268M572 112V268"/>
+                </g>
+                <rect x="494" y="138" width="52" height="104" fill="#6fb1ff" opacity=".7"/>
+                <rect x="468" y="177" width="104" height="26" fill="#ef7180" opacity=".75"/>
+                <path d="M197 177H235M397 177H435" stroke="#2980b9" stroke-width="4" marker-end="url(#arrow)"/>
+                <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#2980b9"/></marker></defs>
+              </svg>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="status">Completed</span>
+                <span>2026.06–2026.07</span>
+              </div>
+              <h3>Logic-to-Layout AI Tutor</h3>
+              <p>Truth Table부터 CMOS schematic과 layout까지 연결하는 인터랙티브 반도체 학습 웹앱입니다.</p>
+              <ul class="tag-list" aria-label="사용 도구">
+                <li>JavaScript</li><li>Supabase</li><li>OpenAI API</li><li>Vercel</li>
+              </ul>
+              <span class="project-card__link">프로젝트 상세 보기 <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light" id="experience">
+      <div class="section__inner section__inner--narrow reveal">
+        <p class="section-kicker">Research & Experience</p>
+        <h2>연구·실습·발표 경험</h2>
+        <div class="empty-state">
+          <span class="empty-state__icon" aria-hidden="true">＋</span>
+          <div>
+            <h3>경험 자료를 정리하는 순서에 맞춰 추가합니다.</h3>
+            <p>현재 시제품에는 확정해 공개한 프로젝트만 반영했습니다. 이후 경험 항목은 동일한 형식으로 쉽게 추가할 수 있습니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--muted" id="skills">
+      <div class="section__inner reveal">
+        <p class="section-kicker">Skills</p>
+        <h2>문제를 분석하고 구현하는 데 사용하는 역량</h2>
+        <div class="skill-grid">
+          <article class="skill-group">
+            <h3>Device & Process</h3>
+            <p>MOSFET, Short-Channel Effects, DIBL, Work-Function Engineering, High-K gate stack, process parameter screening</p>
+          </article>
+          <article class="skill-group">
+            <h3>TCAD</h3>
+            <p>Synopsys Sentaurus Workbench, SProcess, SDevice, SVisual을 이용한 구조 구현·전기특성 계산·지표 자동 추출</p>
+          </article>
+          <article class="skill-group">
+            <h3>Digital & Software</h3>
+            <p>Vivado, Verilog, Python, HTML, CSS, JavaScript를 활용한 시뮬레이션·자동화·학습 도구 구현</p>
+          </article>
+          <article class="skill-group">
+            <h3>Analysis</h3>
+            <p>DOE 비교, transfer curve 해석, metric extraction, GIXRD 기반 박막 분석, 결과 신뢰성과 한계 검토</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light" id="education">
+      <div class="section__inner section__inner--narrow reveal">
+        <p class="section-kicker">Education</p>
+        <h2>Soongsil University</h2>
+        <div class="education-card">
+          <div>
+            <span class="education-card__label">Major</span>
+            <h3>Materials Science and Engineering</h3>
+          </div>
+          <div>
+            <span class="education-card__label">Double Major</span>
+            <h3>Next-Generation Semiconductor Engineering</h3>
+          </div>
+          <p>재료의 구조·물성에 대한 기반 위에서 반도체 소자와 공정, TCAD 시뮬레이션 역량을 함께 확장하고 있습니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="contact">
+      <div class="section__inner section__inner--narrow reveal">
+        <p class="section-kicker section-kicker--light">Contact</p>
+        <h2>프로젝트와 기술 기록을 계속 업데이트합니다.</h2>
+        <p class="contact-copy">현재 공개된 전체 코드와 프로젝트 기록은 GitHub에서 확인할 수 있습니다.</p>
+        <div class="contact-actions">
+          <a class="button button--primary" href="https://github.com/jujushmaterial">GitHub Profile</a>
+          <a class="button button--ghost" href="#projects">Projects</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Sanghyeon Ju. Built for a materials and semiconductor engineering portfolio.</p>
+  </footer>
+
+  <script src="assets/js/portfolio-v2.js" defer></script>
+</body>
+</html>

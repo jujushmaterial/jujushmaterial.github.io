@@ -4,9 +4,10 @@
 
 | No. | Portfolio | Period | Status | Link |
 |---:|---|---|---|---|
-| 1 | TCAD pMOS Process Optimization | 2026.03–2026.06 | Completed | [Project Page](https://jujushmaterial.github.io/TCAD-pMOS-process-optimization/) / [Repository](https://github.com/jujushmaterial/TCAD-pMOS-process-optimization) |
-| 2 | Vivado Verilog Traffic Signal Controller | 2026.05 | Completed | [Project Page](https://jujushmaterial.github.io/vivado-traffic-signal-controller/) / [Repository](https://github.com/jujushmaterial/vivado-traffic-signal-controller) |
-| 3 | Logic-to-Layout AI Tutor | 2026.06–2026.07 | Completed | [Project Page](https://github.com/jujushmaterial/logic-to-layout-tutor-portfolio) / [Web App](https://logic-to-layout-tutor.vercel.app/) / [Demo](https://www.youtube.com/watch?v=6UpYdEnMlKQ) |
+| 1 | TCAD Dual-Metal-Gate MOSFET Feasibility Study | 2026.03–2026.07 | Conference Presented | [Project Page](https://jujushmaterial.github.io/TCAD-Dual-Metal-Gate-MOSFET-Feasibility-Study/) / [Repository](https://github.com/jujushmaterial/TCAD-Dual-Metal-Gate-MOSFET-Feasibility-Study) |
+| 2 | TCAD pMOS Process Optimization | 2026.03–2026.06 | Completed | [Project Page](https://jujushmaterial.github.io/TCAD-pMOS-process-optimization/) / [Repository](https://github.com/jujushmaterial/TCAD-pMOS-process-optimization) |
+| 3 | Vivado Verilog Traffic Signal Controller | 2026.05 | Completed | [Project Page](https://jujushmaterial.github.io/vivado-traffic-signal-controller/) / [Repository](https://github.com/jujushmaterial/vivado-traffic-signal-controller) |
+| 4 | Logic-to-Layout AI Tutor | 2026.06–2026.07 | Completed | [Project Page](https://github.com/jujushmaterial/logic-to-layout-tutor-portfolio) / [Web App](https://logic-to-layout-tutor.vercel.app/) / [Demo](https://www.youtube.com/watch?v=6UpYdEnMlKQ) |
 
 **Summary:**  
 This table provides direct access to completed portfolio projects, their development periods, and detailed project pages.
@@ -41,7 +42,37 @@ Relevant academic background:
 
 ## Portfolio Projects
 
-### 1. [TCAD pMOS Process Optimization](https://jujushmaterial.github.io/TCAD-pMOS-process-optimization/)
+### 1. [TCAD Dual-Metal-Gate MOSFET Feasibility Study](https://jujushmaterial.github.io/TCAD-Dual-Metal-Gate-MOSFET-Feasibility-Study/)
+
+**Topic:** Physical verification of source–drain Work-Function Split and future GAA/CFET applicability  
+**Period:** 2026.03–2026.07  
+**Status:** Conference Presented  
+**Tools:** Sentaurus Workbench, SProcess, SDevice, SVisual, MobaXterm  
+**Project Page:** [View Project Page](https://jujushmaterial.github.io/TCAD-Dual-Metal-Gate-MOSFET-Feasibility-Study/)  
+**Repository:** [View Repository](https://github.com/jujushmaterial/TCAD-Dual-Metal-Gate-MOSFET-Feasibility-Study)
+
+2D planar nMOS TCAD test vehicle에서 source 측 low-work-function gate와 drain 측 high-work-function gate를 분리해, Work-Function Split이 DIBL, Ioff, Ion/Ioff에 미치는 물리적 영향을 검증했습니다. Lg = 0.25, 0.10, 0.028 µm에서 Single-Metal Gate와 Dual-Metal Gate를 반복 비교했습니다.
+
+연구 과정에서 Vtgm 기반 DIBL 특이값을 발견해 `Vd/2` correction과 constant-current threshold를 도입했습니다. 또한 thin SiO₂에서 gate leakage가 새로운 한계가 됨을 확인하고, 동일 EOT의 SiO₂ IL/HfO₂ stack으로 대표 High-Vd 조건의 `IgTotal_On`을 약 99.40% 줄였습니다. GateS/GateD 길이 비율 실험으로 source injection과 drain suppression 사이의 trade-off도 분석했습니다.
+
+**Summary:**  
+This conference-presented study verifies the physical direction of lateral work-function splitting in a 2D MOSFET, improves DIBL extraction reliability, evaluates high-k gate-leakage mitigation, and defines future GAA/CFET research questions.
+
+주요 내용은 다음과 같습니다.
+
+- Lateral Dual-Metal Gate SProcess implementation
+- Independent GateS/GateD work-function control
+- 0.25/0.10/0.028 µm scaling verification
+- Id, Ig, SS, Ion/Ioff, DIBL automated extraction
+- Corrected Vtgm and constant-current DIBL
+- SiO₂ IL/HfO₂ stack at equivalent EOT
+- GateS/GateD ratio trade-off analysis
+- Literature-based GAA/CFET research framing
+- Full verified Sentaurus code publication
+
+---
+
+### 2. [TCAD pMOS Process Optimization](https://jujushmaterial.github.io/TCAD-pMOS-process-optimization/)
 
 **Topic:** pMOS process conversion and multi-objective optimization using Sentaurus TCAD  
 **Period:** 2026.03–2026.06  
@@ -71,7 +102,7 @@ This project converts a SimpleMOS nMOS process into a pMOS flow and compares num
 
 ---
 
-### 2. [Vivado Verilog Traffic Signal Controller](https://jujushmaterial.github.io/vivado-traffic-signal-controller/)
+### 3. [Vivado Verilog Traffic Signal Controller](https://jujushmaterial.github.io/vivado-traffic-signal-controller/)
 
 **Topic:** FSM-based traffic signal controller using Verilog and Vivado  
 **Period:** 2026.05  
@@ -96,7 +127,7 @@ This project implements an improved FSM-based traffic signal controller using Ve
 
 ---
 
-### 3. [Logic-to-Layout AI Tutor](https://github.com/jujushmaterial/logic-to-layout-tutor-portfolio)
+### 4. [Logic-to-Layout AI Tutor](https://github.com/jujushmaterial/logic-to-layout-tutor-portfolio)
 
 **Topic:** AI-powered interactive logic-to-layout learning web app  
 **Period:** 2026.06–2026.07  

@@ -56,14 +56,20 @@
   };
 
   const logicProjectUrl = 'https://jujushmaterial.github.io/logic-to-layout-tutor-portfolio/';
-  const normalizeProjectLinks = () => {
-    document.querySelectorAll('.project-card-link').forEach((link) => {
-      const title = link.querySelector('h2')?.textContent?.trim() || '';
-      if (title.includes('Logic-to-Layout')) link.href = logicProjectUrl;
-    });
+  const isLogicProjectLink = (link) => {
+    const title = link.querySelector('h2')?.textContent?.trim() || '';
+    const label = link.textContent?.trim() || '';
+    const href = link.getAttribute('href') || '';
+    return (
+      title.includes('Logic-to-Layout') ||
+      label === 'Logic-to-Layout' ||
+      href.includes('logic-to-layout-tutor')
+    );
+  };
 
-    document.querySelectorAll('.related-pill').forEach((link) => {
-      if (link.textContent.trim() === 'Logic-to-Layout') link.href = logicProjectUrl;
+  const normalizeProjectLinks = () => {
+    document.querySelectorAll('.project-card-link, .related-pill').forEach((link) => {
+      if (isLogicProjectLink(link)) link.href = logicProjectUrl;
     });
   };
 
@@ -77,6 +83,13 @@
     });
     observer.observe(projectContainer, { childList: true, subtree: true });
   }
+
+  document.addEventListener('click', (event) => {
+    const link = event.target.closest('.project-card-link, .related-pill');
+    if (!link || !isLogicProjectLink(link)) return;
+    event.preventDefault();
+    window.location.assign(logicProjectUrl);
+  }, true);
 
   requestAnimationFrame(() => {
     allButton?.click();

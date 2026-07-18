@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" role="img" aria-labelledby="title desc">
+  <title id="title">FRAME photo club logo</title>
+  <desc id="desc">Black and white FRAME logo with a camera icon and Since 2017 text.</desc>
+  <rect width="1080" height="1080" fill="#ffffff"/>
+  <rect x="68" y="68" width="944" height="944" rx="14" fill="none" stroke="#111111" stroke-width="14"/>
+  <g fill="#111111" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="112" text-anchor="middle">
+    <text x="190" y="505">F</text>
+    <text x="330" y="505">R</text>
+    <text x="470" y="505">A</text>
+    <text x="750" y="505">M</text>
+    <text x="900" y="505">E</text>
+  </g>
+  <g fill="none" stroke="#111111" stroke-width="13" stroke-linejoin="round">
+    <path d="M545 389h105l25 35h57c14 0 25 11 25 25v107c0 14-11 25-25 25H506c-14 0-25-11-25-25V449c0-14 11-25 25-25h15z"/>
+    <circle cx="620" cy="504" r="48"/>
+    <path d="M505 461h33"/>
+  </g>
+  <text x="540" y="890" fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="66" text-anchor="middle">Since 2017</text>
+</svg>

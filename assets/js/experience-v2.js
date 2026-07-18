@@ -3,9 +3,9 @@
 
   const experiences = [
     {
-      image: 'assets/images/experience/frame-logo.svg?v=20260718-1',
+      image: 'assets/images/experience/frame-logo.jpg?v=20260718-1',
       link: 'https://jujushmaterial.github.io/FRAME-Photo-Club-President-Experience/',
-      title: 'FRAME Photo Club President',
+      title: '26-2 FRAME 회장',
       period: '2026.07.01–Present',
       status: 'In Progress',
       role: 'President',
@@ -33,8 +33,8 @@
     <div class="project-wrapper experience-wrapper">
       <a class="project-card-link experience-card-link" href="${experience.link}" aria-label="${experience.title} Experience 페이지 열기">
         <article class="card experience-project-card">
-          <div class="card__image experience-card-image">
-            <img src="${experience.image}" alt="${experience.title} representative image" loading="lazy">
+          <div class="card__image experience-card-image image-fallback">
+            <img src="${experience.image}" alt="${experience.title} representative image" loading="lazy" onerror="this.hidden=true;this.parentElement.classList.add('is-fallback')">
           </div>
           <div class="card__content">
             <div class="card__article">

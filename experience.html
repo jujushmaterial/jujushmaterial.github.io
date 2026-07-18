@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
   <link rel="stylesheet" href="assets/css/portfolio-v2.css">
-  <link rel="stylesheet" href="assets/css/experience-v2.css?v=20260718-1">
+  <link rel="stylesheet" href="assets/css/experience-v2.css?v=20260718-2">
 </head>
 <body>
   <header class="subpage-head">
@@ -26,11 +26,18 @@
   </header>
 
   <main class="page-main">
-    <div class="page-container experience-list"></div>
+    <div class="page-container">
+      <div class="project-technologies" aria-label="Experience filters">
+        <button class="filter-button is-active" type="button" data-experience-filter="all">All</button>
+        <button class="filter-button" type="button" data-experience-filter="major">Major</button>
+        <button class="filter-button" type="button" data-experience-filter="extracurricular">Extracurricular</button>
+      </div>
+      <div class="projects-wrapper experience-list" aria-live="polite"></div>
+    </div>
   </main>
 
   <footer class="footer">Sanghyeon Ju &copy; 2026 · Theme based on abhn/portfolio (GPL-3.0)</footer>
   <script src="assets/js/portfolio-v2.js"></script>
-  <script src="assets/js/experience-v2.js?v=20260718-1"></script>
+  <script src="assets/js/experience-v2.js?v=20260718-2"></script>
 </body>
 </html>

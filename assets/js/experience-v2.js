@@ -3,13 +3,13 @@
 
   const experiences = [
     {
-      image: 'assets/images/experience/frame-logo.jpg?v=20260718-1',
+      image: 'assets/images/experience/frame-logo.jpg?v=20260718-2',
       link: 'https://jujushmaterial.github.io/FRAME-Photo-Club-President-Experience/',
-      title: '26-2 FRAME 회장',
+      title: 'FRAME 사진동아리 회장',
       period: '2026.07.01–Present',
       status: 'In Progress',
       role: 'President',
-      description: '숭실대학교 중앙 사진동아리 FRAME의 회장으로서 회장직 인수인계, 운영체계 점검, 총회, 회칙 개정 및 주요 활동을 기록하고 있습니다.',
+      description: '숭실대학교 중앙 사진동아리 FRAME의 2026학년도 2학기 회장 활동을 기록하고 있습니다.',
       categories: ['extracurricular']
     }
   ];
@@ -34,7 +34,7 @@
       <a class="project-card-link experience-card-link" href="${experience.link}" aria-label="${experience.title} Experience 페이지 열기">
         <article class="card experience-project-card">
           <div class="card__image experience-card-image image-fallback">
-            <img src="${experience.image}" alt="${experience.title} representative image" loading="lazy" onerror="this.hidden=true;this.parentElement.classList.add('is-fallback')">
+            <img src="${experience.image}" alt="${experience.title} 대표 이미지" loading="lazy" onerror="this.hidden=true;this.parentElement.classList.add('is-fallback')">
           </div>
           <div class="card__content">
             <div class="card__article">

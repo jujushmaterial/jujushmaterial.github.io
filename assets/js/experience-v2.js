@@ -3,7 +3,7 @@
 
   const experiences = [
     {
-      image: 'assets/images/experience/frame-logo.svg',
+      image: 'assets/images/experience/frame-logo.svg?v=20260718-1',
       link: 'https://jujushmaterial.github.io/FRAME-Photo-Club-President-Experience/',
       title: 'FRAME Photo Club President',
       period: '2026.07.01–Present',

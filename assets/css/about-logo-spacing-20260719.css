@@ -1,0 +1,15 @@
+.education-logos {
+  margin-top: 70px;
+}
+
+@media (max-width: 760px) {
+  .education-logos {
+    margin-top: 38px;
+  }
+}
+
+@media (max-width: 540px) {
+  .education-logos {
+    margin-top: 30px;
+  }
+}

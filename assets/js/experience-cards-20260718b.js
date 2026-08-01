@@ -25,6 +25,18 @@
       role: 'President',
       description: '숭실대학교 중앙 사진동아리 FRAME의 2026학년도 2학기 회장 활동을 기록하고 있습니다.',
       categories: ['extracurricular']
+    },
+    {
+      image: 'assets/images/experience/intelligent-robot-camp-card.jpg?v=20260802-1',
+      imageClass: 'experience-card-image--camp',
+      fallback: 'CAMP',
+      link: 'https://jujushmaterial.github.io/2026-Intelligent-Robot-Creative-Convergence-Camp/',
+      title: '2026 지능형 로봇 산업분야 컨소시엄 창의융합캠프',
+      period: '2026.06.24–2026.06.26',
+      status: 'Complete',
+      role: 'Team Member',
+      description: '장호원 현장조사와 주민 인터뷰를 바탕으로 문제를 재정의하고, 건설현장 안전 로봇 ‘철통이’ 콘셉트와 시뮬레이션을 제안해 은상·전체 3위를 수상한 팀 프로젝트입니다.',
+      categories: ['extracurricular']
     }
   ];
 

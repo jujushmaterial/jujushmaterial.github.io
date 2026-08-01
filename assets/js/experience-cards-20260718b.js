@@ -27,7 +27,7 @@
       categories: ['extracurricular']
     },
     {
-      image: 'assets/images/experience/intelligent-robot-camp-card-v3.svg?v=20260802-3',
+      image: 'assets/images/experience/intelligent-robot-camp-card.png?v=20260802-4',
       imageClass: 'experience-card-image--camp',
       fallback: 'CAMP',
       link: 'https://jujushmaterial.github.io/2026-Intelligent-Robot-Creative-Convergence-Camp/',

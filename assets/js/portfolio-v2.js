@@ -8,7 +8,7 @@
       period: '2026.07.01–2026.10.01',
       status: 'Completed',
       tools: 'Sentaurus Workbench · SDE · SDevice · SVisual · Python',
-      description: 'Low–High–Low Three-Layer Metal-Gate VCAT의 성능을 SMG baseline과 비교하고, 금속 게이트 분할 경계 변화에 대한 tolerance window와 공정 강건성을 TCAD로 분석한 공동 연구입니다.',
+      description: 'Gate 금속을 3개로 나눈 Low–High–Low TLMG를 적용한 VCAT을 단계적으로 설계·검증하고, gate 공정 오차에 의한 tolerance window를 정량화한 TCAD 연구입니다.',
       categories: ['featured', 'tcad'],
       skills: ['Semiconductor Devices', 'Semiconductor Processes', 'Sentaurus TCAD']
     },

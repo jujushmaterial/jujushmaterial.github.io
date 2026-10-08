@@ -8,6 +8,7 @@
 | 2 | TCAD pMOS Process Optimization | 2026.03–2026.06 | Completed | [Project Page](https://jujushmaterial.github.io/TCAD-pMOS-process-optimization/) / [Repository](https://github.com/jujushmaterial/TCAD-pMOS-process-optimization) |
 | 3 | Vivado Verilog Traffic Signal Controller | 2026.05 | Completed | [Project Page](https://jujushmaterial.github.io/vivado-traffic-signal-controller/) / [Repository](https://github.com/jujushmaterial/vivado-traffic-signal-controller) |
 | 4 | Logic-to-Layout AI Tutor | 2026.06–2026.07 | Completed | [Project Page](https://github.com/jujushmaterial/logic-to-layout-tutor-portfolio) / [Web App](https://logic-to-layout-tutor.vercel.app/) / [Demo](https://www.youtube.com/watch?v=6UpYdEnMlKQ) |
+| 5 | TLMG VCAT Research | 2026.07.01–2026.10.01 | Completed | [Project Page](https://jujushmaterial.github.io/TLMG-VCAT-research-portfolio/) / [Repository](https://github.com/jujushmaterial/TLMG-VCAT-research-portfolio) |
 
 **Summary:**  
 This table provides direct access to completed portfolio projects, their development periods, and detailed project pages.
@@ -151,6 +152,25 @@ This project connects truth tables, gate circuits, CMOS schematics, and layout p
 - OpenAI API-based AI Tutor
 - Supabase-based login, saving, scoring, and ranking
 - Vercel deployment and iterative AI-assisted development
+
+---
+
+### 5. [TLMG VCAT Research](https://jujushmaterial.github.io/TLMG-VCAT-research-portfolio/)
+
+**Topic:** Three-Layer Metal-Gate VCAT performance verification and gate-segmentation process robustness analysis  
+**Period:** 2026.07.01–2026.10.01  
+**Status:** Completed  
+**Tools:** Sentaurus Workbench, SDE, SDevice, SVisual, Python  
+**Project Page:** [View Project Page](https://jujushmaterial.github.io/TLMG-VCAT-research-portfolio/)  
+**Repository:** [View Repository](https://github.com/jujushmaterial/TLMG-VCAT-research-portfolio)  
+**Collaborative Research:** [Research Workflow Sheet](https://jujushmaterial.github.io/VCAT-1T1C-DRAM-TCAD-Research/)
+
+![TLMG VCAT Research](TLMG-VCAT-research-portfolio/assets/figures/tlmg_vcat_research_cover.png)
+
+고집적 DRAM을 위한 Low–High–Low TLMG VCAT 구조를 TCAD로 단계적으로 검증하고, Ti/TiN/Ti work-function 조합과 15/32/13 nm nominal geometry를 선정했습니다. Phase 2의 SMG baseline 대비 Ion, Ioff, DIBL, GIDL 및 Ion/Ioff 성능을 비교하고, gate segmentation boundary variation을 통해 device-level tolerance window를 제안했습니다. 본 연구는 2026 차세대반도체 경진대회에서 장려상을 수상했습니다.
+
+**Summary:**  
+This collaborative TCAD research validates the electrical performance and physical behavior of a Low–High–Low three-layer metal-gate VCAT, compares its performance against a single-metal baseline, and quantifies a gate-segmentation tolerance window.
 
 ---
 

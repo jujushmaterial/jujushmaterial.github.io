@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="290" viewBox="0 0 1260 290" role="img" aria-label="Natural-language TCAD research workflow with review, approval and isolated execution">
+<rect width="1260" height="290" fill="#fff"/>
+<text x="630" y="37" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#202124">Human-in-the-loop TCAD Workflow</text>
+<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="3.5" orient="auto"><path d="M0 0 L7 3.5 L0 7" fill="#6b7780"/></marker></defs>
+<g font-family="Arial" text-anchor="middle">
+<rect x="24" y="93" width="210" height="106" rx="8" fill="#f5f7f9" stroke="#cfd7dc"/><text x="129" y="132" font-size="19" font-weight="700" fill="#263039">Research Intent</text><text x="129" y="161" font-size="15" fill="#62707c">Natural-language request</text><text x="129" y="184" font-size="15" fill="#62707c">Condition negotiation</text>
+<rect x="270" y="93" width="210" height="106" rx="8" fill="#f5f7f9" stroke="#cfd7dc"/><text x="375" y="132" font-size="19" font-weight="700" fill="#263039">Code Proposal</text><text x="375" y="161" font-size="15" fill="#62707c">Project inspection</text><text x="375" y="184" font-size="15" fill="#62707c">Code diff / references</text>
+<rect x="516" y="93" width="210" height="106" rx="8" fill="#e9f2fc" stroke="#74b1df" stroke-width="2"/><text x="621" y="132" font-size="19" font-weight="700" fill="#263039">Human Approval</text><text x="621" y="161" font-size="15" fill="#62707c">Review changes</text><text x="621" y="184" font-size="15" fill="#62707c">Explicit authorization</text>
+<rect x="762" y="93" width="210" height="106" rx="8" fill="#f5f7f9" stroke="#cfd7dc"/><text x="867" y="132" font-size="19" font-weight="700" fill="#263039">Sentaurus Run</text><text x="867" y="161" font-size="15" fill="#62707c">Isolated workspace</text><text x="867" y="184" font-size="15" fill="#62707c">SProcess / SDevice</text>
+<rect x="1008" y="93" width="228" height="106" rx="8" fill="#f5f7f9" stroke="#cfd7dc"/><text x="1122" y="132" font-size="19" font-weight="700" fill="#263039">Results &amp; Metrics</text><text x="1122" y="161" font-size="15" fill="#62707c">Verified file retrieval</text><text x="1122" y="184" font-size="15" fill="#62707c">Run-linked comparison</text>
+</g>
+<g stroke="#6b7780" stroke-width="2.5" fill="none" marker-end="url(#arr)"><path d="M235 147H270"/><path d="M481 147H516"/><path d="M727 147H762"/><path d="M973 147H1008"/></g>
+<text x="630" y="247" font-family="Arial" font-size="16" text-anchor="middle" fill="#506675">AI proposes · Researcher approves · Sentaurus computes</text>
+</svg>

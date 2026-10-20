@@ -1,0 +1,19 @@
+.tcaid-figure{padding:20px;border:1px solid #d9dde2;background:#fff;margin:24px 0}.tcaid-figure img{display:block;width:100%;max-width:100%;height:auto}.tcaid-figure figcaption{font-size:.88rem;color:#646b73;text-align:center;padding-top:12px}.tcaid-video{margin:24px 0;border:1px solid #d9dde2;background:#fff}.tcaid-video__frame{aspect-ratio:16 / 9;background:#0c1b30}.tcaid-video__frame iframe{display:block;border:0;width:100%;height:100%}.tcaid-video__links{display:flex;gap:12px;flex-wrap:wrap;align-items:center;padding:14px 18px}.tcaid-video__links a{font-weight:700;text-decoration:none;color:#246ca0}.tcaid-video__links a:hover{text-decoration:underline}.tcaid-pdf-link[hidden]{display:none!important}.tcaid-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}.tcaid-mini{padding:21px;border:1px solid #d9dde2;background:#f8fafc}.tcaid-mini h3{margin:0 0 9px;font-size:1.03rem}.tcaid-mini p{margin:0;line-height:1.65}.tcaid-table{width:100%;border-collapse:collapse;margin:18px 0}.tcaid-table td,.tcaid-table th{text-align:left;padding:11px 14px;border:1px solid #d9dde2;vertical-align:top}.tcaid-table th{background:#f6f7f8}.tcaid-stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin:22px 0}.tcaid-stat{padding:18px;border:1px solid #d9dde2;text-align:center}.tcaid-stat strong{display:block;font-size:clamp(1.15rem,2.5vw,1.7rem);line-height:1.25}.tcaid-stat span{font-size:.86rem;color:#646b73}.tcaid-prose{max-width:900px}.tcaid-section{scroll-margin-top:90px}.tcaid-section h2{font-size:clamp(1.45rem,3vw,2.05rem);padding-bottom:9px;border-bottom:2px solid #222;margin:0 0 20px}.tcaid-section h3{font-size:1.13rem;margin:28px 0 12px}.tcaid-section p{line-height:1.75;margin:0 0 17px}.tcaid-section li{margin-bottom:10px}.tcaid-section{padding:40px 0}.tcaid-wrap{width:min(1000px,94vw);margin:auto}.tcaid-toc{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0}.tcaid-toc a{border:1px solid #d9dde2;padding:8px 12px;text-decoration:none;font-size:.9rem}.tcaid-toc a:hover{background:#f6f7f8}.tcaid-note{font-size:.9rem;color:#646b73}.tcaid-small{font-size:.94rem;color:#535d67}@media(max-width:640px){.tcaid-section{padding:28px 0}.tcaid-table{display:block;overflow-x:auto}.tcaid-figure{padding:9px}.tcaid-video__links{flex-direction:column;align-items:flex-start}}
+/* Original VCAT design; figures use shared joint-project demo assets. */
+.tcaid-feature-media{margin-top:28px}
+.tcaid-figure-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:21px 0}
+.tcaid-figure-grid .tcaid-figure{margin:0;display:flex;flex-direction:column;justify-content:space-between}
+.tcaid-figure__open{display:block;cursor:zoom-in;text-decoration:none}
+.tcaid-figure__open:focus-visible{outline:3px solid #3498db;outline-offset:5px}
+.tcaid-figure__open img{width:100%;max-height:330px;object-fit:contain;object-position:center;transition:opacity .16s}
+.tcaid-figure__open:hover img{opacity:.91}
+.tcaid-figure--portrait .tcaid-figure__open img{max-height:480px}
+.tcaid-figure--medium{max-width:710px;margin:22px auto}
+.tcaid-figure--poster{max-width:790px;margin:24px auto}
+.tcaid-figure--poster .tcaid-figure__open img{max-height:none;object-fit:contain}
+.tcaid-video__spacer{color:#9aa2a8}
+@media(max-width:720px){
+.tcaid-figure-grid{grid-template-columns:1fr;gap:15px}
+.tcaid-figure__open img,.tcaid-figure--portrait .tcaid-figure__open img{max-height:460px}
+.tcaid-video__spacer{display:none}
+}

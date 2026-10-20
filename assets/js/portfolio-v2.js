@@ -1,6 +1,18 @@
 (() => {
   const projects = [
     {
+      image: 'https://jujushmaterial.github.io/TCAID-portfolio/assets/figures/logo.webp',
+      link: 'https://jujushmaterial.github.io/TCAID-portfolio/',
+      title: 'TCAID : TCAD AI Manager',
+      shortTitle: 'TCAID',
+      period: '2026.07–2026.10',
+      status: 'Completed',
+      tools: 'Python · Sentaurus TCAD · SSH/SFTP · LLM API',
+      description: '자연어 기반 연구 조건 협의부터 Workbench 프로젝트 분석, 코드 검토·승인, 격리 실행, 결과 회수와 지표 비교까지 연결한 Human-in-the-loop TCAD 연구 자동화 시스템입니다.',
+      categories: ['featured', 'tcad', 'aiweb'],
+      skills: ['Sentaurus TCAD', 'Python', 'AI-Assisted Development']
+    },
+    {
       image: 'https://jujushmaterial.github.io/TLMG-VCAT-research-portfolio/assets/figures/tlmg_vcat_research_cover.png',
       link: 'https://jujushmaterial.github.io/TLMG-VCAT-research-portfolio/',
       title: 'TLMG VCAT Research',

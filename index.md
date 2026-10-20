@@ -9,6 +9,7 @@
 | 3 | Vivado Verilog Traffic Signal Controller | 2026.05 | Completed | [Project Page](https://jujushmaterial.github.io/vivado-traffic-signal-controller/) / [Repository](https://github.com/jujushmaterial/vivado-traffic-signal-controller) |
 | 4 | Logic-to-Layout AI Tutor | 2026.06–2026.07 | Completed | [Project Page](https://github.com/jujushmaterial/logic-to-layout-tutor-portfolio) / [Web App](https://logic-to-layout-tutor.vercel.app/) / [Demo](https://www.youtube.com/watch?v=6UpYdEnMlKQ) |
 | 5 | TLMG VCAT Research | 2026.07.01–2026.10.01 | Completed | [Project Page](https://jujushmaterial.github.io/TLMG-VCAT-research-portfolio/) / [Repository](https://github.com/jujushmaterial/TLMG-VCAT-research-portfolio) |
+| 6 | TCAID : TCAD AI Manager | 2026.07–2026.10 | Completed | [Project Page](https://jujushmaterial.github.io/TCAID-portfolio/) / [Portfolio Repository](https://github.com/jujushmaterial/TCAID-portfolio) / [Program Repository](https://github.com/jujushmaterial/TCAD-AI-Manager) |
 
 **Summary:**  
 This table provides direct access to completed portfolio projects, their development periods, and detailed project pages.
@@ -171,6 +172,25 @@ This project connects truth tables, gate circuits, CMOS schematics, and layout p
 
 **Summary:**  
 This collaborative TCAD research validates the electrical performance and physical behavior of a Low–High–Low three-layer metal-gate VCAT, compares its performance against a single-metal baseline, and quantifies a gate-segmentation tolerance window.
+
+---
+
+### 6. [TCAID : TCAD AI Manager](https://jujushmaterial.github.io/TCAID-portfolio/)
+
+**Topic:** Human-in-the-loop Sentaurus TCAD research automation with natural-language research intent and project-aware execution  
+**Period:** 2026.07–2026.10  
+**Status:** Completed  
+**Tools:** Python, Sentaurus Workbench, SProcess, SDevice, SVisual, SSH/SFTP, LLM API  
+**Project Page:** [View Project Page](https://jujushmaterial.github.io/TCAID-portfolio/)  
+**Portfolio Repository:** [View Portfolio Repository](https://github.com/jujushmaterial/TCAID-portfolio)  
+**Program Repository:** [View Program Repository](https://github.com/jujushmaterial/TCAD-AI-Manager)
+
+![TCAID : TCAD AI Manager](TCAID-portfolio/assets/figures/logo.webp)
+
+자연어 연구 요청과 기존 Sentaurus Workbench 프로젝트의 분석, 코드 변경 제안 및 검토, 사용자 승인, 격리 작업 공간에서의 실제 TCAD 실행, 결과 회수와 지표 비교를 하나의 연구 작업 흐름으로 연결한 공동 개발 프로젝트입니다. 2026 차세대반도체 경진대회 시스템/SW 분야 최우수상을 수상했습니다.
+
+**Summary:**  
+TCAID is a human-in-the-loop TCAD research automation system that connects natural-language requests, Sentaurus project inspection, code review and approval, isolated simulation, and traceable results.
 
 ---
 

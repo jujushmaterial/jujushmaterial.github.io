@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TCAID · TCAD AI Manager | Sanghyeon Ju</title>
+<meta name="description" content="자연어 기반 Sentaurus TCAD 연구 자동화 시스템: TCAID 프로젝트의 설계, 구현 및 검증">
+<meta property="og:title" content="TCAID · TCAD AI Manager">
+<meta property="og:description" content="Human-in-the-loop Sentaurus TCAD Research Automation">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+<link rel="stylesheet" href="assets/css/project-v2.css">
+<link rel="stylesheet" href="assets/css/tcaid.css">
+</head>
+<body>
+<header class="site-header"><div class="site-header__inner">
+<a class="site-name" href="https://jujushmaterial.github.io/">Sanghyeon Ju</a>
+<nav class="site-nav" aria-label="Portfolio navigation">
+<a href="https://jujushmaterial.github.io/">HOME</a>
+<a href="https://jujushmaterial.github.io/projects.html">PROJECTS</a>
+<a href="https://github.com/jujushmaterial/TCAID-portfolio">GITHUB</a>
+</nav></div></header>
+<main>
+<section class="project-hero">
+<div class="project-hero__inner">
+<p class="eyebrow">SENTAURUS TCAD · AI SOFTWARE · RESEARCH AUTOMATION</p>
+<h1>TCAID : TCAD AI Manager</h1>
+<p class="hero-subtitle">Natural-Language Sentaurus TCAD Research Automation</p>
+<p class="hero-summary">자연어 연구 요청부터 조건 협의, 코드 검토 및 승인, 격리 실행, 결과 회수와 지표 비교까지 연결하는 Human-in-the-loop TCAD 연구 관리 시스템입니다.</p>
+<div class="project-meta" aria-label="Project metadata">
+<div><span>Project</span><strong>2026 차세대반도체 경진대회</strong></div>
+<div><span>Status</span><strong class="status"><i></i>Completed</strong></div>
+<div><span>Tools</span><strong>Python · Sentaurus TCAD · SSH/SFTP · LLM API</strong></div>
+</div>
+<div class="hero-actions">
+<a class="button button--dark" href="#overview">프로젝트 개요</a>
+<a class="button" href="https://github.com/jujushmaterial/TCAD-AI-Manager" target="_blank" rel="noopener">Program Repository</a>
+<a class="button" href="#demonstration">시연 영상</a>
+</div></div></section>
+<div class="tcaid-wrap">
+<nav class="tcaid-toc" aria-label="Sections">
+<a href="#overview">01 Overview</a><a href="#background">02 Background</a><a href="#architecture">03 Architecture</a><a href="#development">04 Development</a><a href="#features">05 Core Features</a><a href="#demonstration">06 Demonstration</a><a href="#validation">07 Validation</a><a href="#limitations">08 Limitations</a><a href="#collaboration">09 Collaboration</a><a href="#awards">10 Awards</a><a href="#references">11 References</a>
+</nav>
+<section class="tcaid-section" id="overview"><h2>01. 프로젝트 개요</h2>
+<div class="tcaid-grid">
+<figure class="tcaid-figure"><img src="assets/figures/logo.webp" alt="TCAID TCAD AI Manager 로고" loading="lazy"></figure>
+<div><h3>TCAID : TCAD AI Manager</h3>
+<p>기존 Sentaurus Workbench를 유지하면서 자연어 기반 연구 요청, 코드 생성·검토, 승인, 실제 TCAD 실행 및 실행 이력 관리를 연결하는 소프트웨어 프로젝트입니다.</p>
+<p><strong>Summary.</strong> TCAID connects natural-language research intent, Workbench project inspection, human approval, isolated Sentaurus execution, and traceable result management.</p>
+</div></div></section>
+<section class="tcaid-section" id="background"><h2>02. 연구 배경과 문제 정의</h2>
+<p>Workbench 프로젝트 확인, CMD·TCL 수정, Linux 서버 접속, 공정·소자 시뮬레이션, 결과 파일 회수와 비교는 서로 다른 환경에서 반복됩니다. LLM이 코드를 작성하더라도 연구자가 생성 결과를 실제 프로젝트에 옮겨 적용하고 실행하는 과정에는 여전히 작업 단절과 오류 가능성이 남습니다.</p>
+<p>본 프로젝트는 단순 코드 생성이 아닌 연구 작업의 연결에 초점을 두고, 사용자가 변경과 실행을 명시적으로 승인하는 안전한 자동화 흐름을 설계했습니다.</p></section>
+<section class="tcaid-section" id="architecture"><h2>03. 시스템 아키텍처</h2>
+<figure class="tcaid-figure"><img src="assets/figures/system_architecture.svg" alt="Windows TCAID와 Linux Sentaurus 계산환경 간의 아키텍처"><figcaption>Windows 관리 환경 · SSH/SFTP · Linux Sentaurus 계산환경</figcaption></figure>
+<p>Windows 측에서 연구 의도, 프로젝트 관찰, 코드 검토·승인 및 실행 이력 관리를 수행합니다. Linux 측에서는 Sentaurus Workbench 및 SProcess·SDevice·SVisual이 물리 계산과 결과 생성을 담당합니다. AI는 수치 시뮬레이터를 대체하지 않습니다.</p>
+
+<div class="tcaid-feature-media">
+<div class="tcaid-figure-grid"><figure class="tcaid-figure "><a class="tcaid-figure__open" href="assets/figures/intent.webp" target="_blank" rel="noopener" aria-label="TCAD AI Manager 자연어 조건 구체화 화면 크게 보기"><img src="assets/figures/intent.webp" alt="TCAD AI Manager 자연어 조건 구체화 화면" loading="lazy" decoding="async"></a><figcaption>자연어 입력에 대한 추가 조건 확인</figcaption></figure><figure class="tcaid-figure "><a class="tcaid-figure__open" href="assets/figures/system.webp" target="_blank" rel="noopener" aria-label="TCAID Windows–Linux 시스템 구조 이미지 크게 보기"><img src="assets/figures/system.webp" alt="TCAID Windows–Linux 시스템 구조 이미지" loading="lazy" decoding="async"></a><figcaption>Windows–Linux 통합 시스템 구조</figcaption></figure></div>
+</div></section>
+<section class="tcaid-section" id="development"><h2>04. 개발 과정</h2>
+<p>기존 프로젝트 구조와 의존관계를 읽기 전용으로 파악하고, 사용자가 확정한 조건에 대해서만 코드 제안과 변경 검토를 수행하도록 계층을 분리했습니다. 특히 원격 파일 동작, 승인 유효성, 데이터 출처와 실패 상태를 명시적으로 관리했습니다.</p>
+<figure class="tcaid-figure"><img src="assets/figures/research_workflow.svg" alt="자연어 요청에서 TCAD 실행과 결과 관리로 이어지는 절차"></figure>
+<div class="tcaid-figure-grid"><figure class="tcaid-figure "><a class="tcaid-figure__open" href="assets/figures/safety.webp" target="_blank" rel="noopener" aria-label="Human-in-the-loop 승인 제어 설명 크게 보기"><img src="assets/figures/safety.webp" alt="Human-in-the-loop 승인 제어 설명" loading="lazy" decoding="async"></a><figcaption>변경 전 검토와 안전 제어 설계</figcaption></figure><figure class="tcaid-figure "><a class="tcaid-figure__open" href="assets/figures/provenance.webp" target="_blank" rel="noopener" aria-label="TCAID provenance 아키텍처 크게 보기"><img src="assets/figures/provenance.webp" alt="TCAID provenance 아키텍처" loading="lazy" decoding="async"></a><figcaption>실행–결과–지표의 이력 추적 구조</figcaption></figure></div>
+</section>
+<section class="tcaid-section" id="features"><h2>05. 핵심 기능</h2>
+<div class="tcaid-grid">
+<div class="tcaid-mini"><h3>Project Inspector</h3><p>Workbench 프로젝트의 artifact·node·의존관계를 읽기 전용 Snapshot으로 관리</p></div>
+<div class="tcaid-mini"><h3>Research Intent</h3><p>확정된 조건과 AI 제안·미확정 조건을 구분하고 자연어 협의 수행</p></div>
+<div class="tcaid-mini"><h3>Human Approval</h3><p>변경 대상·코드·근거를 검토한 뒤 명시적 승인</p></div>
+<div class="tcaid-mini"><h3>Isolated Workspace</h3><p>원본과 분리한 실행 사본에 승인된 변경 적용</p></div>
+<div class="tcaid-mini"><h3>SSH / SFTP</h3><p>Linux 계산환경 연결 및 결과 파일 회수와 상태 검증</p></div>
+<div class="tcaid-mini"><h3>Metrics &amp; Provenance</h3><p>실행별 결과 파일·지표·연구 이력의 연계 관리</p></div>
+</div>
+<div class="tcaid-figure-grid"><figure class="tcaid-figure "><a class="tcaid-figure__open" href="assets/figures/approval.webp" target="_blank" rel="noopener" aria-label="TCAID 승인과 변경 범위를 표시한 실제 화면 크게 보기"><img src="assets/figures/approval.webp" alt="TCAID 승인과 변경 범위를 표시한 실제 화면" loading="lazy" decoding="async"></a><figcaption>변경 범위 확인 및 명시적 승인 UI</figcaption></figure><figure class="tcaid-figure "><a class="tcaid-figure__open" href="assets/figures/workspace.webp" target="_blank" rel="noopener" aria-label="TCAID isolated workspace 화면 크게 보기"><img src="assets/figures/workspace.webp" alt="TCAID isolated workspace 화면" loading="lazy" decoding="async"></a><figcaption>격리 작업 공간에 승인된 변경 적용</figcaption></figure></div>
+</section>
+<section class="tcaid-section" id="demonstration"><h2>06. 프로그램 시연</h2>
+<p>프로젝트 연결 → 자연어 조건 구체화 → 코드 검토·승인 → 격리 사본 적용 → Sentaurus 실행 → 2D/3D 구조 확인 → SDevice 조건별 비교 → 지표 추출 순으로 진행한 시연입니다.</p>
+<div class="tcaid-video">
+<div class="tcaid-video__frame"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/SZO0Ig2KbU4?rel=0" title="TCAID 프로그램 시연" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="tcaid-video__links"><a href="https://www.youtube.com/watch?v=SZO0Ig2KbU4" target="_blank" rel="noopener">YouTube에서 영상 열기 ↗</a><span class="tcaid-video__spacer" aria-hidden="true">·</span><a id="program-guide-pdf" class="tcaid-pdf-link" href="https://github.com/jujushmaterial/TCAID-portfolio/blob/main/docs/TCAID_Program_Guide.pdf" type="application/pdf" target="_blank" rel="noopener">프로그램 사용 가이드 PDF 열기 ↗</a></div></div>
+<h3>시연 결과</h3><p><strong>SProcess:</strong> SVisual에서 2D 구조 및 3D mesh 생성 확인.</p><p><strong>SDevice:</strong> Vd = 0.5 V / 1.0 V의 node 분기·실행과 실행별 ion_max 수치 비교.</p>
+
+<h3>SProcess · 2D/3D 공정 구조 생성</h3>
+<div class="tcaid-figure-grid"><figure class="tcaid-figure "><a class="tcaid-figure__open" href="assets/figures/mos2d.webp" target="_blank" rel="noopener" aria-label="실제 SVisual 2D 소자 구조 결과 크게 보기"><img src="assets/figures/mos2d.webp" alt="실제 SVisual 2D 소자 구조 결과" loading="lazy" decoding="async"></a><figcaption>SProcess 실행 후 2D 결과 확인</figcaption></figure><figure class="tcaid-figure tcaid-figure--portrait"><a class="tcaid-figure__open" href="assets/figures/mos3d.webp" target="_blank" rel="noopener" aria-label="실제 SVisual 3D 소자 Mesh 결과 크게 보기"><img src="assets/figures/mos3d.webp" alt="실제 SVisual 3D 소자 Mesh 결과" loading="lazy" decoding="async"></a><figcaption>SProcess 실행 후 3D mesh 확인</figcaption></figure></div>
+<h3>SDevice · Drain Bias 두 조건 비교</h3>
+<div class="tcaid-figure-grid"><figure class="tcaid-figure "><a class="tcaid-figure__open" href="assets/figures/sdevice.webp" target="_blank" rel="noopener" aria-label="TCAID 실제 SDevice 두 조건 실험 화면 크게 보기"><img src="assets/figures/sdevice.webp" alt="TCAID 실제 SDevice 두 조건 실험 화면" loading="lazy" decoding="async"></a><figcaption>Vd = 0.5 V / 1.0 V 조건별 Workbench node 구성</figcaption></figure><figure class="tcaid-figure "><a class="tcaid-figure__open" href="assets/figures/metric.webp" target="_blank" rel="noopener" aria-label="TCAID ion_max 지표 추출 화면 크게 보기"><img src="assets/figures/metric.webp" alt="TCAID ion_max 지표 추출 화면" loading="lazy" decoding="async"></a><figcaption>각 실행의 결과 파일에서 ion_max 추출</figcaption></figure></div>
+<figure class="tcaid-figure tcaid-figure--medium"><a class="tcaid-figure__open" href="assets/figures/compare.webp" target="_blank" rel="noopener" aria-label="TCAID 두 조건의 수치 비교 화면 크게 보기"><img src="assets/figures/compare.webp" alt="TCAID 두 조건의 수치 비교 화면" loading="lazy" decoding="async"></a><figcaption>동일 지표의 실행별 정량 비교</figcaption></figure>
+</section>
+<section class="tcaid-section" id="validation"><h2>07. 검증 및 성과</h2>
+<div class="tcaid-stat-grid"><div class="tcaid-stat"><strong>4,307</strong><span>자동 테스트 통과</span></div><div class="tcaid-stat"><strong>0</strong><span>자동 테스트 실패</span></div><div class="tcaid-stat"><strong>2D + 3D</strong><span>SProcess 구조·Mesh 확인</span></div><div class="tcaid-stat"><strong>Vd 0.5 / 1.0 V</strong><span>SDevice 조건별 실행</span></div></div>
+<table class="tcaid-table"><thead><tr><th>검증</th><th>확인된 결과</th></tr></thead><tbody>
+<tr><td>자동 테스트</td><td>4,307건 통과 / 3건 건너뜀 / 0건 실패 (제출 보고서 기준)</td></tr>
+<tr><td>실환경 연결</td><td>SSH 연결, 원격 SDevice 실행, SFTP 결과 파일 회수 확인</td></tr>
+<tr><td>SProcess</td><td>코드 적용·실행 후 2D 구조 및 3D mesh 확인</td></tr>
+<tr><td>SDevice</td><td>Vd 두 조건, Workbench node 분기, 실행별 ion_max 비교</td></tr>
+<tr><td>작업시간 사례</td><td>경진대회 포스터의 1-Cycle 사례: 약 67분 → 약 29분</td></tr>
+</tbody></table>
+<p class="tcaid-note">자동 테스트와 통합 GUI 시연, TCAD 결과의 물리적 타당성 검증은 서로 다른 검증 범위입니다.</p></section>
+<section class="tcaid-section" id="limitations"><h2>08. 한계 및 추가 연구</h2>
+<p>.plt 및 gvars.dat 등 다양한 실제 결과 형식의 범용 분석, 다중 실행의 물리 기반 AI 해석, parameter sweep, 수렴 진단과 자동 물리적 타당성 검증은 추가적인 구현·검증이 필요한 범위입니다.</p>
+<p>본 연구의 핵심 성과는 연구자가 통제권을 유지하면서 자연어 연구 요청부터 실제 계산과 지표 관리까지 연속적으로 처리하는 흐름을 구현·시연했다는 점입니다.</p></section>
+<section class="tcaid-section" id="collaboration"><h2>09. 공동 개발 기록</h2>
+<p>숭실대학교 송민호·주상현·유용성·이선재·이택규, 총 5인 공동 개발 프로젝트입니다.</p><p><strong>담당:</strong> 프로젝트 총괄, 설계·개발 및 발표. 본 포트폴리오는 공동 프로젝트의 구현과 검증 내용을 중심으로 정리했습니다.</p></section>
+<section class="tcaid-section" id="awards"><h2>10. 발표 및 수상</h2><p>2026 차세대반도체 경진대회 · 시스템/SW 분야 <strong>최우수상</strong></p>
+<figure class="tcaid-figure tcaid-figure--poster"><a class="tcaid-figure__open" href="assets/figures/tcaid_poster.jpg" target="_blank" rel="noopener" aria-label="TCAID 경진대회 제출 포스터 크게 보기"><img src="assets/figures/tcaid_poster.jpg" alt="TCAID 경진대회 제출 포스터" loading="lazy" decoding="async"></a><figcaption>2026 차세대반도체 경진대회 TCAID 전시 포스터 · 클릭하여 확대</figcaption></figure>
+</section>
+<section class="tcaid-section" id="references"><h2>11. 참고 자료</h2>
+<ul><li><a href="https://github.com/jujushmaterial/TCAD-AI-Manager">TCAID 프로그램 저장소</a></li><li><a href="https://www.youtube.com/watch?v=SZO0Ig2KbU4">프로그램 시연 영상</a></li><li><a href="https://github.com/jujushmaterial/TCAID-portfolio/blob/main/docs/SOURCE_MAPPING.md">보고서 근거 및 Source Mapping</a></li></ul>
+</section>
+</div></main>
+<footer class="site-footer"><a href="https://jujushmaterial.github.io/">← Portfolio Home</a><a href="https://github.com/jujushmaterial/TCAID-portfolio">GitHub Repository</a><span>Sanghyeon Ju © 2026</span></footer>
+
+</body>
+</html>

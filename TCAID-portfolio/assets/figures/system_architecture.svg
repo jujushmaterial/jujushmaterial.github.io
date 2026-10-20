@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="570" viewBox="0 0 1080 570" role="img" aria-label="TCAID software architecture, Windows interface and Linux Sentaurus computational environment">
+<defs><style>.t{font:700 23px Arial,sans-serif;fill:#222}.s{font:17px Arial,sans-serif;fill:#53606a}.box{fill:#fff;stroke:#bfcbd5;stroke-width:2}.arr{stroke:#657987;stroke-width:3;fill:none;marker-end:url(#a)}</style><marker id="a" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7" fill="#657987"/></marker></defs>
+<rect width="1080" height="570" fill="#fff"/>
+<text x="540" y="46" text-anchor="middle" font-family="Arial" font-size="29" font-weight="700" fill="#202124">TCAID System Architecture</text>
+<rect x="36" y="96" width="492" height="420" rx="20" fill="#f2f7fc" stroke="#d0e3f5" stroke-width="2"/>
+<rect x="552" y="96" width="492" height="420" rx="20" fill="#f3f9f5" stroke="#d6eadf" stroke-width="2"/>
+<text x="282" y="135" text-anchor="middle" class="t">Windows · Research Management</text>
+<text x="798" y="135" text-anchor="middle" class="t">Linux · Sentaurus Computing</text>
+<rect x="97" y="165" width="370" height="70" rx="8" class="box"/><text x="282" y="194" text-anchor="middle" class="t">TCAD AI Manager</text><text x="282" y="219" text-anchor="middle" class="s">Natural-language research request</text>
+<rect x="97" y="265" width="370" height="79" rx="8" class="box"/><text x="282" y="294" text-anchor="middle" class="t">Project Inspector / Intent</text><text x="282" y="321" text-anchor="middle" class="s">Read-only snapshot · Condition review</text>
+<rect x="97" y="375" width="370" height="89" rx="8" fill="#e6f0fa" stroke="#a7c7e4" stroke-width="2"/><text x="282" y="407" text-anchor="middle" class="t">Review &amp; Approval</text><text x="282" y="434" text-anchor="middle" class="s">Isolated workspace · Run record</text>
+<rect x="609" y="180" width="378" height="86" rx="8" class="box"/><text x="798" y="216" text-anchor="middle" class="t">Sentaurus Workbench</text><text x="798" y="243" text-anchor="middle" class="s">Project nodes and parameter control</text>
+<rect x="609" y="304" width="378" height="86" rx="8" class="box"/><text x="798" y="339" text-anchor="middle" class="t">SProcess · SDevice</text><text x="798" y="364" text-anchor="middle" class="s">Process and device simulation</text>
+<rect x="609" y="425" width="378" height="62" rx="8" class="box"/><text x="798" y="459" text-anchor="middle" class="t">Results / SVisual</text>
+<path class="arr" d="M282,235V265"/><path class="arr" d="M282,344V375"/><path class="arr" d="M467,421H547V223H609"/><path class="arr" d="M798,266V304"/><path class="arr" d="M798,390V425"/><path d="M609,459H546V479H468" stroke="#657987" stroke-width="3" stroke-dasharray="8 6" fill="none" marker-end="url(#a)"/>
+<text x="540" y="174" text-anchor="middle" font-family="Arial" font-size="15" fill="#386993">SSH / SFTP</text>
+<text x="540" y="510" text-anchor="middle" font-family="Arial" font-size="14" fill="#63768a">Result retrieval</text>
+</svg>
